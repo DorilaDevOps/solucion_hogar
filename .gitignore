@@ -1,0 +1,21 @@
+# Sistema operativo
+Thumbs.db
+Thumbs.db:encryptable
+Desktop.ini
+.DS_Store
+
+# Editores / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs y temporales
+*.log
+*.tmp
+*.bak
+
+# Dependencias (por si se agrega tooling luego)
+node_modules/
+dist/

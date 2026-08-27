@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="es-UY">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solución Hogar — Oficios de confianza para tu hogar en Uruguay</title>
+<meta name="description" content="Venta, reparaciones e instalación para tu hogar en todo Uruguay. Electricidad, cañerías, pintura, ventanas, rejas y portones. Profesionales de confianza, precios justos, rapidez y puntualidad. Un problema menos. Una solución más.">
+<meta name="keywords" content="multiservicios hogar, reparaciones, electricidad, plomería, cañerías, pintura, ventanas, rejas, portones, mantenimiento hogar, oficios Uruguay, presupuesto, instalación artefactos">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Solución Hogar">
+<meta name="theme-color" content="#1F6FEB">
+<link rel="canonical" href="https://solucionhogar.uy/">
+
+<link rel="icon" type="image/png" href="bird_colores.png">
+<link rel="apple-touch-icon" href="bird_colores.png">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://solucionhogar.uy/">
+<meta property="og:title" content="Solución Hogar — Oficios de confianza para tu hogar">
+<meta property="og:description" content="Reparaciones, instalación y mantenimiento del hogar en todo Uruguay. Vos tenés el problema, nosotros la solución. Electricidad, cañerías, pintura, ventanas, rejas y portones.">
+<meta property="og:image" content="https://solucionhogar.uy/bird_colores.png">
+<meta property="og:locale" content="es_UY">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Solución Hogar — El lugar donde dejás un problema y encontrás una solución">
+<meta name="twitter:description" content="Oficios confiables. Trabajos bien hechos. Rapidez, precios justos y puntualidad para tu hogar en Uruguay.">
+<meta name="twitter:image" content="https://solucionhogar.uy/bird_colores.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Anton&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Store",
+  "name": "Solución Hogar",
+  "description": "Servicios y oficios de confianza para el hogar en todo Uruguay: electricidad, plomería, pintura, ventanas, rejas y portones.",
+  "url": "https://solucionhogar.uy/",
+  "logo": "https://solucionhogar.uy/bird_colores.png",
+  "telephone": "+598 94 872 605",
+  "areaServed": "Uruguay",
+  "currenciesAccepted": "UYU",
+  "paymentAccepted": "Efectivo, tarjetas",
+  "openingHours": "Mo-Su 08:00-20:00",
+  "sameAs": [
+    "https://wa.me/59894872605"
+  ],
+  "makesOffer": [
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Electricidad domiciliaria"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Plomería y cañerías"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Pintura y reparación de paredes"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Colocación de ventanas"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Mantenimiento de rejas y portones"}}
+  ]
+}
+</script>
+
+<style>
+  /* ============ VARIABLES GLOBALES ============ */
+  :root{
+    /* paleta: azul eléctrico + ámbar, sin amarillo+negro, sin rojo, negro suavizado */
+    --paper:#EFEAE2;
+    --white:#ffffff;
+    --ink:#2A2A28;          /* tinta suavizada (antes #111) */
+    --ink-2:#3A3A37;
+    --muted:#6B6B64;
+    --line:#000000;
+    --accent:#1F6FEB;        /* azul eléctrico */
+    --accent-2:#FF6B35;      /* ámbar */
+    --accent-dim:#E3ECFD;
+    --green:#0E9F6E;
+    --link:#1F6FEB;
+    --link-2:#303030;
+    --overlay:rgba(20,20,20,.72);
+
+    /* tipografía */
+    --font-display:'Archivo Black', sans-serif;
+    --font-mega:'Anton', sans-serif;
+    --font-body:'Space Grotesk', sans-serif;
+
+    /* escala tipográfica */
+    --fs-xs:.72rem;
+    --fs-sm:.85rem;
+    --fs-base:.95rem;
+    --fs-md:1.05rem;
+    --fs-lg:1.2rem;
+    --fs-xl:clamp(1.5rem,1.3rem + 1vw,2.1rem);
+    --fs-2xl:clamp(1.9rem,1.5rem + 3vw,3.4rem);
+    --fs-hero:clamp(2.6rem,2rem + 6.5vw,6rem);
+
+    /* animaciones */
+    --dur-fast:.15s;
+    --dur-med:.3s;
+    --dur-slow:.7s;
+    --ease:cubic-bezier(.22,.61,.36,1);
+
+    /* sombras duras brutulistas */
+    --shadow-sm:3px 3px 0 var(--ink);
+    --shadow-md:5px 5px 0 var(--ink);
+    --shadow-lg:8px 8px 0 var(--ink);
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:var(--font-body);
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  ::selection{background:var(--accent); color:var(--white);}
+  img,svg{max-width:100%; display:block;}
+  a{color:var(--link); text-decoration:none; transition:color var(--dur-fast) ease;}
+  a:hover{color:var(--link-2);}
+  button{font-family:inherit; cursor:pointer;}
+  h1,h2,h3,.mega{font-family:var(--font-display); text-transform:uppercase; letter-spacing:-.02em; color:var(--ink);}
+  .wrap{max-width:1200px; margin:0 auto; padding:0 18px;}
+  section{padding:64px 0; position:relative;}
+  main [id],section [id]{scroll-margin-top:120px;}
+  :focus-visible{outline:3px solid var(--accent); outline-offset:2px;}
+
+  /* ---- barra de progreso ---- */
+  .reading-progress{position:fixed; top:0; left:0; width:100%; height:6px; z-index:200; pointer-events:none; background:var(--ink);}
+  .reading-progress-bar{height:100%; width:0%; background:var(--accent); transition:width var(--dur-fast) linear;}
+
+  /* ---- sellos de sección ---- */
+  .sec-tag{
+    display:inline-flex; align-items:center; gap:8px;
+    font-family:var(--font-mega); font-weight:400; text-transform:uppercase;
+    letter-spacing:.04em; font-size:clamp(.72rem,.7rem + .3vw,.85rem);
+    background:var(--ink); color:var(--paper); padding:6px 14px;
+    border:2px solid var(--ink); box-shadow:var(--shadow-sm);
+  }
+  .sec-title{font-size:var(--fs-2xl); line-height:.96; margin:18px 0 14px;}
+  .sec-sub{font-size:clamp(1rem,.95rem + .3vw,1.15rem); color:var(--muted); max-width:52ch;}
+  .corner{position:absolute; inset:0; pointer-events:none; z-index:0;}
+  .corner::before,.corner::after{content:''; position:absolute; width:26px; height:26px; border:3px solid var(--ink);}
+
+  /* ---- HEADER ---- */
+  header{
+    position:sticky; top:0; z-index:100;
+    background:var(--paper);
+    border-bottom:3px solid var(--ink);
+  }
+  .nav-inner{display:flex; align-items:center; justify-content:space-between; padding:12px 18px; max-width:1200px; margin:0 auto;}
+  .logo{display:flex; align-items:center; gap:10px; font-family:var(--font-display); text-transform:uppercase; font-size:clamp(1rem,.95rem + .4vw,1.4rem); color:var(--ink);}
+  .logo strong{border-bottom:4px solid var(--accent);}
+  .logo-mark{
+    width:40px; height:40px; border-radius:50%; overflow:hidden; flex-shrink:0;
+    border:3px solid var(--ink); display:grid; place-items:center; background:var(--white);
+    box-shadow:var(--shadow-sm);
+  }
+  .logo-mark img{width:100%; height:100%; object-fit:cover; display:block;}
+  nav ul{list-style:none; display:none; gap:6px; align-items:center;}
+  nav a{padding:10px 14px; font-weight:600; font-size:.95rem; color:var(--ink); border:2px solid transparent; transition:all var(--dur-fast) ease;}
+  nav a:hover{background:var(--ink); color:var(--paper); border-color:var(--ink);}
+  .nav-cta{background:var(--ink); color:var(--paper); border:2px solid var(--ink);}
+  .nav-cta:hover{background:var(--accent); color:var(--white); border-color:var(--accent);}
+  @media(min-width:900px){ nav ul{display:flex;} }
+
+  .menu-btn{display:flex; flex-direction:column; justify-content:center; align-items:center; background:var(--ink); border:2px solid var(--ink); width:46px; height:46px; padding:0; gap:5px;}
+  @media(min-width:900px){ .menu-btn{display:none;} }
+  .menu-btn .bar{display:block; width:22px; height:3px; background:var(--paper); transition:transform var(--dur-med) var(--ease), opacity var(--dur-med) var(--ease);}
+  .menu-btn.open .bar-top{transform:translateY(8px) rotate(45deg);}
+  .menu-btn.open .bar-mid{opacity:0;}
+  .menu-btn.open .bar-bottom{transform:translateY(-8px) rotate(-45deg);}
+  #mobile-nav{display:grid; grid-template-rows:0fr; opacity:0; background:var(--ink); overflow:hidden; transition:grid-template-rows var(--dur-med) var(--ease), opacity var(--dur-med) var(--ease);}
+  #mobile-nav.open{grid-template-rows:1fr; opacity:1;}
+  #mobile-nav>div{min-height:0; display:flex; flex-direction:column;}
+  #mobile-nav a{padding:16px 20px; color:var(--paper); font-weight:600; font-size:1.05rem; border-bottom:2px solid rgba(255,255,255,.15);}
+  #mobile-nav a:hover{background:var(--accent); color:var(--white); padding-left:28px;}
+
+  /* ---- HERO ---- */
+  .hero{background:var(--paper); border-bottom:3px solid var(--ink); padding:0;}
+  .hero-grid{position:relative; display:grid; gap:0;}
+  .hero-left{padding:52px 18px 34px;}
+  .hero-tag{font-family:var(--font-mega); text-transform:uppercase; letter-spacing:.05em; font-size:.9rem; background:var(--accent); color:var(--white); display:inline-block; padding:6px 14px; margin-bottom:24px; box-shadow:var(--shadow-sm);}
+  .hero h1{font-size:var(--fs-hero); line-height:.9; margin-bottom:20px;}
+  .hero h1 .accent{color:var(--accent);}
+  .hero h1 .accent2{color:var(--accent-2);}
+  .hero-sub{font-size:clamp(1rem,1rem + .4vw,1.25rem); font-weight:500; max-width:48ch; margin-bottom:16px;}
+  .hero-smallline{font-family:var(--font-mega); text-transform:uppercase; letter-spacing:.03em; font-size:clamp(.8rem,1vw,.95rem); color:var(--muted); margin-bottom:26px;}
+  .hero-actions{display:flex; flex-wrap:wrap; gap:14px; margin-bottom:26px;}
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:10px;
+    font-family:var(--font-display); text-transform:uppercase; letter-spacing:.02em;
+    font-size:clamp(.8rem,.78rem + .2vw,.95rem); padding:16px 24px; border:3px solid var(--ink);
+    box-shadow:var(--shadow-md); transition:transform var(--dur-fast) var(--ease), box-shadow var(--dur-fast) var(--ease), background var(--dur-med) var(--ease);
+    background:var(--ink); color:var(--paper);
+  }
+  .btn:hover{transform:translate(-2px,-2px); box-shadow:var(--shadow-lg);}
+  .btn:active{transform:translate(2px,2px); box-shadow:2px 2px 0 var(--ink);}
+  .btn-accent{background:var(--accent); color:var(--white);}
+  .btn-accent:hover{background:var(--ink);}
+  .btn-amber{background:var(--accent-2); color:var(--white);}
+  .btn-ink{background:var(--ink); color:var(--paper);}
+  .hero-right{position:relative; background:var(--ink); color:var(--paper); min-height:200px; display:grid; place-items:center; overflow:hidden; border-top:3px solid var(--ink);}
+  .hero-bigline{position:relative; z-index:2; font-family:var(--font-mega); text-transform:uppercase; font-size:clamp(1.4rem,3vw,2.8rem); letter-spacing:.02em; text-align:center; line-height:1; padding:16px;}
+  .hero-bigline .a{color:var(--accent);}
+  .hero-bigline .a2{color:var(--accent-2);}
+  .hero-pattern{position:absolute; inset:0; pointer-events:none; opacity:.5; background:
+    repeating-linear-gradient(45deg, rgba(255,255,255,.06) 0 2px, transparent 2px 14px),
+    repeating-linear-gradient(-45deg, rgba(255,255,255,.05) 0 2px, transparent 2px 14px);}
+  .hero-ticker{width:100%; background:var(--accent); color:var(--white); overflow:hidden; border-top:3px solid var(--ink);}
+  .hero-ticker .track{display:flex; gap:0; width:max-content; animation:marquee 22s linear infinite; padding:12px 0;}
+  .hero-ticker span{font-family:var(--font-mega); text-transform:uppercase; font-size:clamp(.85rem,1.4vw,1.05rem); padding:0 26px; white-space:nowrap; letter-spacing:.06em;}
+  .hero-ticker span::after{content:'•'; color:var(--white); margin-left:52px;}
+  @keyframes marquee{ to{transform:translateX(-50%);} }
+  /* hero-right más bajo en pantallas pequeñas */
+  @media(max-width:899px){ .hero-right{min-height:150px;} }
+  @media(min-width:900px){
+    .hero-grid{grid-template-columns:1.05fr .95fr; min-height:78vh;}
+    .hero-left{padding:80px 60px;}
+    .hero-right{border-top:none; border-left:3px solid var(--ink); min-height:auto;}
+  }
+
+  /* ---- BENTO GRID ---- */
+  #servicios{background:var(--paper);}
+  .bento{display:grid; grid-template-columns:repeat(2,1fr); gap:16px; margin-top:38px;}
+  .tile-wrap{position:relative;}
+  .tile{
+    position:relative; width:100%; height:100%; background:var(--white); border:3px solid var(--ink); cursor:pointer;
+    display:flex; flex-direction:column; overflow:hidden; text-align:left;
+    box-shadow:var(--shadow-md); transition:transform var(--dur-fast) var(--ease), box-shadow var(--dur-fast) var(--ease), background var(--dur-med) var(--ease);
+    min-height:220px;
+  }
+  .tile:hover,.tile:focus-visible{transform:translate(-2px,-2px); box-shadow:var(--shadow-lg);}
+  .tile:active{transform:translate(2px,2px); box-shadow:2px 2px 0 var(--ink);}
+  .tile .tile-img-top{width:100%; height:130px; overflow:hidden; border-bottom:3px solid var(--ink); background:var(--ink);}
+  .tile .tile-img-top img{width:100%; height:100%; object-fit:cover; filter:grayscale(1) contrast(1.05); transition:transform var(--dur-slow) var(--ease), filter var(--dur-slow) var(--ease), opacity var(--dur-med) var(--ease);}
+  .tile:hover .tile-img-top img{transform:scale(1.08); filter:grayscale(0) contrast(1);}
+  .tile-img-top img.lz{opacity:0;}
+  .tile-img-top img.lz.loaded{opacity:1; animation:imgIn var(--dur-slow) var(--ease) both;}
+  @keyframes imgIn{from{opacity:0; transform:scale(1.06); filter:blur(6px) grayscale(1);} to{opacity:1; transform:scale(1); filter:blur(0) grayscale(1) contrast(1.05);}}
+  .tile-body{padding:16px; display:flex; flex-direction:column; gap:6px; flex:1;}
+  .tile-body .num{position:absolute; top:10px; right:12px; font-family:var(--font-mega); font-size:1.4rem; color:var(--ink); opacity:.9;}
+  .tile h3{font-size:clamp(1rem,.95rem + .4vw,1.25rem);}
+  .tile p{font-size:var(--fs-sm); color:var(--muted); flex:1;}
+  .tile .tile-cta{display:inline-flex; align-items:center; gap:8px; font-family:var(--font-display); font-size:var(--fs-xs); text-transform:uppercase; margin-top:8px; color:var(--link);}
+  .tile-cta .arr{transition:transform var(--dur-med) var(--ease);}
+  .tile:hover .tile-cta .arr{transform:translateX(5px);}
+  .tile[data-color="accent"]{background:var(--accent); color:var(--white);}
+  .tile[data-color="accent"] h3{color:var(--white);}
+  .tile[data-color="accent"] p{color:rgba(255,255,255,.85);}
+  .tile[data-color="accent"] .num{color:var(--white);}
+  .tile[data-color="accent2"]{background:var(--accent-2); color:var(--white);}
+  .tile[data-color="accent2"] h3{color:var(--white);}
+  .tile[data-color="accent2"] p{color:rgba(255,255,255,.9);}
+  .tile[data-color="accent2"] .num{color:var(--white);}
+  .tile[data-color="dim"]{background:var(--accent-dim); color:var(--ink);}
+  .tile[data-color="dim"] .num{color:var(--accent);}
+
+  /* asimetría en desktop */
+  @media(min-width:720px){
+    .bento{grid-template-columns:repeat(6,1fr); grid-auto-rows:minmax(210px,auto);}
+    .tile-wrap.wide{grid-column:span 4;}
+    .tile-wrap.tall{grid-row:span 2;}
+    .tile-wrap.full{grid-column:span 6;}
+    .tile-wrap[data-span="2"]{grid-column:span 2;}
+    .tile-wrap[data-span="3"]{grid-column:span 3;}
+    .tile-wrap[data-span="4"]{grid-column:span 4;}
+  }
+
+  /* ---- selector por ambientes ---- */
+  #ambientes{background:var(--ink); color:var(--paper);}
+  #ambientes .sec-tag{background:var(--accent); color:var(--white); border-color:var(--accent);}
+  #ambientes .sec-title,#ambientes h3{color:var(--paper);}
+  #ambientes .sec-sub{color:rgba(239,234,226,.7);}
+  .rooms-wrap{display:grid; gap:30px; margin-top:40px;}
+  .house-ill{position:relative; max-width:560px; margin:0 auto; touch-action:manipulation;}
+  .house-ill svg{width:100%; height:auto; overflow:visible;}
+  .house-ill .room{cursor:pointer;}
+  .house-ill .room .ro{transition:filter var(--dur-med) var(--ease), fill var(--dur-med) var(--ease);}
+  .house-ill .room:hover .ro{filter:drop-shadow(0 0 4px var(--accent));}
+  .house-ill .room.active .ro{fill:var(--accent); fill-opacity:.92; stroke:var(--paper);}
+  .room-label{
+    font-family:var(--font-mega); text-transform:uppercase; font-size:.5rem; letter-spacing:.02em;
+    fill:var(--paper); pointer-events:none; transition:fill var(--dur-med) var(--ease);
+  }
+  .room.active .room-label{fill:var(--white);}
+  .rooms-panel{display:block;}
+  .rooms-panel h3{font-size:clamp(1.2rem,1.1rem + .6vw,1.7rem); margin-bottom:6px; color:var(--paper);}
+  .rooms-panel .prompt{font-size:1rem; color:rgba(239,234,226,.75); margin-bottom:20px;}
+  .room-list{display:grid; gap:10px;}
+  .room-item{
+    background:var(--paper); border:3px solid var(--paper); color:var(--ink);
+    padding:14px 16px; display:flex; align-items:center; justify-content:space-between; gap:12px;
+    box-shadow:4px 4px 0 rgba(255,255,255,.08); transition:transform var(--dur-fast) var(--ease), box-shadow var(--dur-fast) var(--ease), background var(--dur-med) var(--ease);
+    cursor:pointer; text-align:left;
+  }
+  .room-item:hover,.room-item:focus-visible{transform:translate(-2px,-2px); box-shadow:6px 6px 0 var(--accent);}
+  .room-item span{font-weight:600; font-size:var(--fs-md);}
+  .room-item .go{font-family:var(--font-mega); font-size:1.1rem; color:var(--accent);}
+  @media(min-width:900px){ .rooms-wrap{grid-template-columns:.8fr 1.2fr; align-items:center;} }
+
+  /* ---- cómo funciona ---- */
+  #como{background:var(--paper);}
+  .steps{display:grid; gap:18px; margin-top:40px;}
+  .step{background:var(--white); border:3px solid var(--ink); padding:24px; box-shadow:var(--shadow-md); position:relative;}
+  .step .big-num{font-family:var(--font-mega); font-size:clamp(3rem,6vw,4.5rem); line-height:1; color:var(--accent); -webkit-text-stroke:2px var(--ink); display:block; margin-bottom:10px;}
+  .step h3{font-size:1.15rem; margin-bottom:6px;}
+  .step p{color:var(--muted); font-size:var(--fs-md);}
+  @media(min-width:720px){ .steps{grid-template-columns:repeat(3,1fr);} }
+
+  /* ---- storytelling / confianza editorial ---- */
+  #historia{background:var(--accent); color:var(--white); border-bottom:3px solid var(--ink);}
+  #historia .sec-tag{background:var(--white); color:var(--ink); border-color:var(--white);}
+  #historia h2{color:var(--white);}
+  #historia .quote{font-family:var(--font-display); font-size:clamp(1.6rem,1.4rem + 2.5vw,3rem); line-height:1.05; text-transform:none; letter-spacing:-.01em; margin:22px 0;}
+  #historia .quote mark{background:transparent; color:var(--accent-2);}
+  .hist-grid{display:grid; gap:16px; margin-top:34px;}
+  .hist-card{background:rgba(255,255,255,.12); border:2px solid rgba(255,255,255,.4); padding:20px; display:flex; gap:14px; align-items:flex-start;}
+  .hist-card .h-ic{font-size:1.8rem; line-height:1;}
+  .hist-card h4{font-family:var(--font-display); text-transform:uppercase; font-size:1rem; color:var(--white); margin-bottom:4px;}
+  .hist-card p{color:rgba(255,255,255,.9); font-size:var(--fs-sm);}
+  @media(min-width:720px){ .hist-grid{grid-template-columns:repeat(3,1fr);} }
+
+  /* ---- confianza ---- */
+  #confianza{background:var(--paper); border-bottom:3px solid var(--ink);}
+  #confianza .sec-tag{background:var(--accent-2); color:var(--white); border-color:var(--accent-2);}
+  .trust-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:14px; margin-top:38px;}
+  .trust-item{background:var(--white); color:var(--ink); border:3px solid var(--ink); padding:18px 20px; box-shadow:var(--shadow-sm);}
+  .trust-item .ic{display:inline-flex; align-items:center; font-size:1.4rem; margin-right:10px; vertical-align:middle;}
+  .trust-item h4{font-family:var(--font-display); text-transform:uppercase; font-size:1rem; margin-bottom:6px; display:inline-block;}
+  .trust-item p{font-size:var(--fs-sm); color:var(--muted);}
+  @media(min-width:720px){ .trust-grid{grid-template-columns:repeat(4,1fr);} }
+
+  /* ---- cotización / formulario ---- */
+  #cotizacion{background:var(--accent-dim); border-top:3px solid var(--ink);}
+  #cotizacion .sec-tag{background:var(--ink); color:var(--paper);}
+  .quote-grid{display:grid; gap:34px; margin-top:36px;}
+  .quote-info h3{font-size:clamp(1.3rem,1.2rem + .7vw,1.9rem); margin-bottom:12px; line-height:1;}
+  .quote-info p{color:var(--ink-2); max-width:44ch; margin-bottom:22px; font-size:var(--fs-md);}
+  .quote-steps{display:grid; gap:12px;}
+  .quote-steps li{list-style:none; display:flex; gap:12px; align-items:flex-start; font-weight:600;}
+  .quote-steps .n{background:var(--accent); color:var(--white); width:30px; height:30px; flex-shrink:0; display:grid; place-items:center; font-family:var(--font-mega);}
+
+  form{background:var(--white); border:3px solid var(--ink); padding:26px; box-shadow:var(--shadow-lg); display:flex; flex-direction:column; gap:18px;}
+  .field{position:relative;}
+  .field label{display:block; font-family:var(--font-display); text-transform:uppercase; font-size:var(--fs-xs); margin-bottom:7px; letter-spacing:.02em; color:var(--ink);}
+  .field input,.field select,.field textarea{
+    width:100%; border:2.5px solid var(--ink); padding:13px 16px; font-family:var(--font-body);
+    font-size:1rem; background:var(--paper); color:var(--ink); border-radius:0;
+    transition:border-color var(--dur-fast) var(--ease), box-shadow var(--dur-fast) var(--ease), background var(--dur-fast) var(--ease);
+  }
+  .field input::placeholder,.field textarea::placeholder{color:rgba(107,107,100,.7);}
+  .field input:focus,.field select:focus,.field textarea:focus{outline-offset:0; background:var(--white); box-shadow:0 0 0 4px var(--accent-dim);}
+  .field.error input,.field.error select,.field.error textarea{border-color:var(--accent-2); box-shadow:0 0 0 3px rgba(255,107,53,.25);}
+  .field .error-msg{display:none; font-size:var(--fs-sm); color:var(--accent-2); font-weight:600; margin-top:6px; align-items:center; gap:6px;}
+  .field.error .error-msg{display:flex;}
+  .field .error-msg::before{content:'⚠';}
+  textarea{resize:vertical; min-height:90px;}
+  form .btn{width:100%;}
+  .field select{appearance:none; -webkit-appearance:none; background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%232A2A28' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E"); background-repeat:no-repeat; background-position:right 14px center; padding-right:40px;}
+  .form-note{font-size:var(--fs-sm); color:var(--muted);}
+  .wa-status{display:none; align-items:center; gap:10px; font-weight:600; font-size:.9rem; padding:12px 14px; background:var(--green); color:var(--white); border:2px solid var(--ink);}
+  .wa-status.show{display:flex; animation:imgIn var(--dur-slow) var(--ease) both;}
+  @media(min-width:900px){ .quote-grid{grid-template-columns:.9fr 1.1fr;} }
+
+  /* ---- FOOTER ---- */
+  footer{background:var(--ink); color:var(--paper); border-top:3px solid var(--accent); padding:48px 0 20px;}
+  footer .foot-top{display:flex; flex-wrap:wrap; justify-content:space-between; gap:28px; padding-bottom:26px; border-bottom:1px solid rgba(239,234,226,.15);}
+  footer .logo{color:var(--paper); margin-bottom:12px;}
+  footer p,.footer p{font-size:var(--fs-sm); color:rgba(239,234,226,.7); max-width:42ch;}
+  footer h5{font-family:var(--font-display); text-transform:uppercase; color:var(--accent); font-size:.85rem; margin-bottom:10px;}
+  footer li{list-style:none; margin-bottom:8px;}
+  footer a{color:rgba(239,234,226,.85);}
+  footer a:hover{color:var(--accent);}
+  footer address{font-style:normal; font-size:var(--fs-sm); color:rgba(239,234,226,.7);}
+  .foot-bottom{display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px; padding-top:20px;}
+  .foot-link{background:none; border:none; padding:0; font-family:var(--font-body); font-size:var(--fs-sm); font-weight:600; color:rgba(239,234,226,.85); text-decoration:underline; text-underline-offset:3px; cursor:pointer;}
+  .foot-link:hover{color:var(--accent);}
+  .foot-credit{font-size:var(--fs-sm); color:rgba(239,234,226,.5);}
+
+  /* ---- modal ---- */
+  .modal{display:none; position:fixed; inset:0; z-index:150; background:var(--overlay); backdrop-filter:blur(3px); align-items:center; justify-content:center; padding:18px;}
+  .modal.open{display:flex; animation:fadeIn var(--dur-med) var(--ease) both;}
+  @keyframes fadeIn{from{opacity:0;} to{opacity:1;}}
+  .modal-box{position:relative; background:var(--paper); border:3px solid var(--ink); width:100%; max-width:760px; max-height:88vh; overflow-y:auto; box-shadow:var(--shadow-lg); animation:modalUp var(--dur-med) var(--ease) both;}
+  @keyframes modalUp{from{opacity:0; transform:translateY(20px);} to{opacity:1; transform:none;}}
+  .modal-media{width:100%; height:220px; overflow:hidden; border-bottom:3px solid var(--ink); background:var(--ink);}
+  .modal-media img{width:100%; height:100%; object-fit:cover; filter:grayscale(1) contrast(1.05);}
+  .modal-media img.lz{opacity:0;}
+  .modal-media img.lz.loaded{opacity:1; animation:imgIn var(--dur-slow) var(--ease) both;}
+  .modal-body{padding:26px;}
+  .modal-body .m-tag{font-family:var(--font-mega); text-transform:uppercase; font-size:.8rem; letter-spacing:.05em; background:var(--accent); color:var(--white); display:inline-block; padding:5px 12px; margin-bottom:14px;}
+  .modal-body h2{font-size:clamp(1.5rem,1.4rem + 1vw,2.2rem); line-height:1; margin-bottom:12px;}
+  .modal-body p{color:var(--muted); font-size:var(--fs-md); margin-bottom:20px; line-height:1.6;}
+  .modal-foot{display:flex; align-items:center; justify-content:space-between; gap:14px; flex-wrap:wrap; padding-top:18px; border-top:2px solid var(--ink);}
+  .modal-price{font-family:var(--font-display); font-size:1.1rem; text-transform:uppercase; color:var(--accent);}
+  .modal-close{position:absolute; top:12px; right:12px; width:42px; height:42px; background:var(--paper); border:3px solid var(--ink); font-size:1.4rem; line-height:1; color:var(--ink); box-shadow:var(--shadow-sm); z-index:2;}
+  .modal-close:hover{background:var(--accent-2); color:var(--white);}
+
+  /* ---- botón flotante whatsapp ---- */
+  .wa-wrap{position:fixed; right:0; bottom:24px; z-index:120; display:flex; align-items:flex-end;}
+  .wa-bubble{position:absolute; right:82px; bottom:10px; background:var(--white); color:var(--ink); border:3px solid var(--ink); padding:12px 40px 12px 16px; max-width:230px; font-size:var(--fs-sm); box-shadow:var(--shadow-md); opacity:0; transform:translateY(12px) scale(.96); pointer-events:none; transition:opacity var(--dur-med) var(--ease), transform var(--dur-med) var(--ease);}
+  .wa-bubble.show{opacity:1; transform:translateY(0) scale(1); pointer-events:auto;}
+  .wa-bubble-close{position:absolute; top:4px; right:6px; background:none; border:none; font-size:1rem; line-height:1; padding:4px; cursor:pointer;}
+  .wa-float{position:relative; width:64px; height:64px; background:var(--green); border:3px solid var(--ink); display:grid; place-items:center; box-shadow:var(--shadow-md);}
+  .wa-float .wa-icon-img{width:32px; height:32px; object-fit:contain; filter:brightness(0);}
+  .wa-float .wa-icon-fallback{display:none; width:34px; height:34px; fill:var(--ink);}
+  @keyframes waShake{0%,100%{transform:translateX(0);}10%,30%,50%,70%,90%{transform:translateX(-4px);}20%,40%,60%,80%{transform:translateX(4px);}}
+  .wa-float.shake{animation:waShake .6s ease;}
+
+  /* ---- animaciones de entrada / scroll ---- */
+  .reveal{opacity:0; transform:translateY(28px); transition:opacity var(--dur-slow) var(--ease), transform var(--dur-slow) var(--ease);}
+  .reveal.in{opacity:1; transform:none;}
+
+  @media(prefers-reduced-motion: reduce){
+    *,*::before,*::after{animation:none !important; transition:none !important;}
+    html{scroll-behavior:auto;}
+    .reveal{opacity:1; transform:none;}
+    .hero-ticker .track{animation:none; flex-wrap:wrap;}
+    .tile:hover,.tile:focus-visible{transform:none; box-shadow:var(--shadow-md);}
+    .tile:hover .tile-img-top img{transform:none; filter:grayscale(1) contrast(1.05);}
+  }
+</style>
+</head>
+<body>
+
+<div class="reading-progress"><div class="reading-progress-bar" id="progressBar"></div></div>
+
+<header>
+  <div class="nav-inner">
+    <a href="#top" class="logo">
+      <span class="logo-mark"><img src="bird_colores.png" alt="Logo de Solución Hogar" width="40" height="40"></span>
+      <strong>Sol·ución&nbsp;Hogar</strong>
+    </a>
+    <nav aria-label="Menú principal">
+      <ul>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#ambientes">Tu casa</a></li>
+        <li><a href="#historia">Confianza</a></li>
+        <li><a href="#cotizacion" class="nav-cta">Cotización</a></li>
+      </ul>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-nav">
+      <span class="bar bar-top"></span>
+      <span class="bar bar-mid"></span>
+      <span class="bar bar-bottom"></span>
+    </button>
+  </div>
+  <nav id="mobile-nav" aria-label="Menú móvil">
+    <div>
+      <a href="#servicios">Servicios</a>
+      <a href="#ambientes">Tu casa</a>
+      <a href="#historia">Confianza</a>
+      <a href="#cotizacion">Cotización inmediata</a>
+    </div>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-grid">
+      <div class="hero-left">
+        <span class="hero-tag">Oficios de confianza · Todo Uruguay</span>
+        <h1>VOS TENÉS EL <span class="accent">PROBLEMA</span>.<br>NOSOTROS LA <span class="accent2">SOLUCIÓN</span>.</h1>
+        <p class="hero-sub">Reparaciones, instalación, pintura y mantenimiento en tu casa, sin importar la complicación. Soluciones rápidas para tu hogar.</p>
+        <p class="hero-smallline">🏠 Confianza y tranquilidad · ⚡ Rapidez y solución · 🔧 Oficios + calidad</p>
+        <div class="hero-actions">
+          <a href="#servicios" class="btn btn-accent">Explorar servicios</a>
+          <a href="#cotizacion" class="btn btn-amber">Cotización inmediata</a>
+        </div>
+        <div style="display:flex; flex-wrap:wrap; gap:10px; align-items:center;">
+          <a href="https://wa.me/59894872605?text=Hola%2C%20necesito%20una%20solucion%20para%20mi%20hogar" target="_blank" rel="noopener" class="btn btn-ink" style="font-size:var(--fs-xs); padding:11px 16px;">WhatsApp 094 872 605</a>
+          <span style="font-weight:600; font-size:var(--fs-sm);">El lugar donde dejás un problema y encontrás una solución.</span>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-pattern" aria-hidden="true"></div>
+        <div class="hero-bigline">DEJÁ EL PROBLEMA<br>EN MANOS DE <span class="a">PROFESIONALES</span><br><span class="a2">UN PROBLEMA MENOS</span></div>
+      </div>
+    </div>
+    <div class="hero-ticker" aria-hidden="true">
+      <div class="track" id="ticker"></div>
+    </div>
+  </section>
+
+  <!-- BENTO GRID -->
+  <section id="servicios" aria-labelledby="servicios-title">
+    <div class="wrap">
+      <p class="sec-tag">01 · Servicios</p>
+      <h2 class="sec-title" id="servicios-title">Todo lo que tu hogar necesita.</h2>
+      <p class="sec-sub">Tocá el casillero que necesitás. Escaneá, elegí y cotizá sin vueltas.</p>
+      <div class="bento" id="bentoGrid"><!-- generado en JS --></div>
+    </div>
+  </section>
+
+  <!-- SELECTOR POR AMBIENTES -->
+  <section id="ambientes" aria-labelledby="ambientes-title">
+    <div class="wrap">
+      <div class="corner" aria-hidden="true"></div>
+      <p class="sec-tag">02 · Tu casa</p>
+      <h2 class="sec-title" id="ambientes-title">¿Dónde está el problema?</h2>
+      <p class="sec-sub">No importa cómo se llame el oficio. Tocalo en tu casa y te mostramos qué podemos hacer ahí.</p>
+      <div class="rooms-wrap">
+        <figure class="house-ill" id="houseIll" aria-label="Plano interactivo de una casa. Elegí un ambiente.">
+          <!-- SVG generado en JS -->
+        </figure>
+        <div class="rooms-panel">
+          <h3 id="roomTitle">Elegí un ambiente</h3>
+          <p class="prompt" id="roomPrompt">Hacé clic en una zona de la casa para ver los servicios disponibles en ese lugar.</p>
+          <div class="room-list" id="roomList"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CÓMO FUNCIONA -->
+  <section id="como" aria-labelledby="como-title">
+    <div class="wrap">
+      <p class="sec-tag">03 · Sin vueltas</p>
+      <h2 class="sec-title" id="como-title">Tres pasos. Ocupate de lo tuyo.</h2>
+      <p class="sec-sub">Todo lo necesario para que te desligues del problema. Vos lo describís igual de complicado que te parezca; nosotros nos encargamos.</p>
+      <div class="steps">
+        <article class="step reveal">
+          <span class="big-num">01</span>
+          <h3>Pedís</h3>
+          <p>Contás qué pasó y dónde, por WhatsApp o el formulario. Sin tecnicismos.</p>
+        </article>
+        <article class="step reveal">
+          <span class="big-num">02</span>
+          <h3>Coordinamos</h3>
+          <p>Con distancia, te pasamos presupuesto claro, fecha y horario. Sin sorpresas.</p>
+        </article>
+        <article class="step reveal">
+          <span class="big-num">03</span>
+          <h3>Listo</h3>
+          <p>Recibís atención puntual, trabajo prolijo y quedás desligado del problema.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- HISTORIA / CONFIANZA EDITORIAL (scrollytelling) -->
+  <section id="historia" aria-labelledby="historia-title">
+    <div class="wrap">
+      <p class="sec-tag">04 · Quiénes somos</p>
+      <h2 class="sec-title" id="historia-title">Profesionales de confianza para cada necesidad.</h2>
+      <p class="quote">“El lugar donde dejás un problema y encontrás una <mark>solución</mark>.”</p>
+      <p class="sec-sub" style="color:rgba(255,255,255,.85);">Oficios confiables. Trabajos bien hechos.</p>
+      <div class="hist-grid">
+        <div class="hist-card reveal"><span class="h-ic" aria-hidden="true">🏠</span><div><h4>Confianza y tranquilidad</h4><p>Entrás a tu casa y sabés que el problema quedó resuelto, sin sorpresas.</p></div></div>
+        <div class="hist-card reveal"><span class="h-ic" aria-hidden="true">⚡</span><div><h4>Rapidez y solución</h4><p>Respuesta ágil y eficiente, para que no esperés más de lo necesario.</p></div></div>
+        <div class="hist-card reveal"><span class="h-ic" aria-hidden="true">🔧</span><div><h4>Oficios + calidad</h4><p>Trabajo bien hecho, con mano de obra calificada y en todo Uruguay.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONFIANZA -->
+  <section id="confianza" aria-labelledby="confianza-title">
+    <div class="wrap">
+      <p class="sec-tag">05 · Compromiso</p>
+      <h2 class="sec-title" id="confianza-title">¿Por qué confiar?</h2>
+      <p class="sec-sub">No es solo reparar: es cuidar tu casa como si fuera la nuestra.</p>
+      <div class="trust-grid">
+        <div class="trust-item reveal"><span class="ic" aria-hidden="true">⚡</span><h4>Rapidez</h4><p>Respuesta ágil y aviso de cualquier imprevisto a tiempo.</p></div>
+        <div class="trust-item reveal"><span class="ic" aria-hidden="true">💰</span><h4>Precios justos</h4><p>Presupuesto claro y sin cargos ocultos antes de empezar.</p></div>
+        <div class="trust-item reveal"><span class="ic" aria-hidden="true">⏰</span><h4>Puntualidad</h4><p>Llegamos al horario y terminamos en el plazo pactado.</p></div>
+        <div class="trust-item reveal"><span class="ic" aria-hidden="true">🛠️</span><h4>Mano de obra</h4><p>Oficios calificados y con experiencia, en todo Uruguay.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COTIZACIÓN / FORMULARIO -->
+  <section id="cotizacion" aria-labelledby="cotizacion-title">
+    <div class="wrap">
+      <p class="sec-tag">06 · Cotización inmediata</p>
+      <h2 class="sec-title" id="cotizacion-title">Desligate del problema.</h2>
+      <div class="quote-grid">
+        <div class="quote-info">
+          <h3>Soluciones rápidas para tu hogar.</h3>
+          <p>Contanos tu caso, aunque te parezca complejo. Coordinamos la visita y te pasamos el presupuesto. Vos te ocupás de vivir, nosotros de tu casa.</p>
+          <ul class="quote-steps">
+            <li><span class="n">1</span>Completás el formulario en menos de un minuto.</li>
+            <li><span class="n">2</span>Se abre WhatsApp con el mensaje ya armado.</li>
+            <li><span class="n">3</span>Confirmás, coordinamos y listo.</li>
+          </ul>
+        </div>
+        <form id="orderForm" novalidate>
+          <div class="wa-status" id="waStatus" role="status">✓ Se abrió WhatsApp con tu mensaje. ¡Confirmá el envío!</div>
+          <div class="field">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre" autocomplete="name">
+            <span class="error-msg" id="err-nombre" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <label for="interes">¿Qué necesitás?</label>
+            <input type="text" id="interes" name="interes" required placeholder="Ej: Reparar cañería en el baño">
+            <span class="error-msg" id="err-interes" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <label for="zona">Departamento (Uruguay)</label>
+            <select id="zona" name="zona" required>
+              <option value="">Elegí tu departamento</option>
+              <option>Montevideo</option>
+              <option>Canelones</option>
+              <option>Maldonado</option>
+              <option>Rocha</option>
+              <option>Lavalleja</option>
+              <option>Treinta y Tres</option>
+              <option>Cerro Largo</option>
+              <option>Rivera</option>
+              <option>Artigas</option>
+              <option>Salto</option>
+              <option>Paysandú</option>
+              <option>Río Negro</option>
+              <option>Durazno</option>
+              <option>Flores</option>
+              <option>Florida</option>
+              <option>San José</option>
+              <option>Colonia</option>
+              <option>Soriano</option>
+              <option>Tacuarembó</option>
+            </select>
+            <span class="error-msg" id="err-zona" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <label for="barrio">Barrio</label>
+            <input type="text" id="barrio" name="barrio" required placeholder="Ej: Pocitos, Cordón, Centro...">
+            <span class="error-msg" id="err-barrio" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <label for="detalles">Describí el problema</label>
+            <textarea id="detalles" name="detalles" required placeholder="Contanos qué pasó, aunque te parezca complicado. Referencias, fotos si querés."></textarea>
+            <span class="error-msg" id="err-detalles" aria-live="polite"></span>
+          </div>
+          <button type="submit" class="btn btn-accent">Enviar por WhatsApp</button>
+          <p class="form-note">Todos los campos son obligatorios. Al enviar se abre WhatsApp con tu pedido ya redactado.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <a href="#top" class="logo">
+          <span class="logo-mark"><img src="bird_colores.png" alt="Logo de Solución Hogar" width="40" height="40"></span>
+          <strong>Sol·ución&nbsp;Hogar</strong>
+        </a>
+        <p>El lugar donde dejás un problema y encontrás una solución. Venta, reparación, instalación y mantenimiento para tu hogar en todo Uruguay.</p>
+      </div>
+      <div>
+        <h5>Contacto</h5>
+        <address>
+          <a href="https://wa.me/59894872605" target="_blank" rel="noopener">WhatsApp: 094 872 605</a><br>
+          Cobertura en todo Uruguay
+        </address>
+        <ul style="margin-top:10px;"><li><button type="button" class="foot-link" id="privacyBtn">Política de privacidad</button></li></ul>
+      </div>
+      <div>
+        <h5>Servicios</h5>
+        <ul>
+          <li><a href="#servicios">Electricidad</a></li>
+          <li><a href="#servicios">Cañerías</a></li>
+          <li><a href="#servicios">Pintura y paredes</a></li>
+          <li><a href="#servicios">Rejas y portones</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p class="foot-credit">© <span id="year"></span> Solución Hogar · Hecho por <a href="https://kikiriya-devops.netlify.app" target="_blank" rel="noopener">kikiriyadevOps</a></p>
+    </div>
+  </div>
+</footer>
+
+<!-- MODAL DETALLE -->
+<div class="modal" id="detailModal" role="dialog" aria-modal="true" aria-labelledby="detailTitle" aria-hidden="true">
+  <div class="modal-box">
+    <button type="button" class="modal-close" id="detailClose" aria-label="Cerrar">&times;</button>
+    <div class="modal-media"><img id="detailImage" class="lz" src="" alt="" title=""></div>
+    <div class="modal-body">
+      <span class="m-tag" id="detailTag"></span>
+      <h2 id="detailTitle"></h2>
+      <p id="detailText"></p>
+      <div class="modal-foot">
+        <span class="modal-price" id="detailPrice"></span>
+        <button class="btn btn-accent" id="detailCta">Cotizar por WhatsApp</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL PRIVACIDAD -->
+<div class="modal" id="privacyModal" role="dialog" aria-modal="true" aria-labelledby="privacyTitle" aria-hidden="true">
+  <div class="modal-box">
+    <button type="button" class="modal-close" id="privacyClose" aria-label="Cerrar">&times;</button>
+    <div class="modal-body">
+      <span class="m-tag">Legal</span>
+      <h2 id="privacyTitle">Política de privacidad</h2>
+      <p style="color:var(--muted); font-size:var(--fs-md);"><strong>Qué datos recopilamos.</strong> Cuando completás el formulario de cotización, solo usamos tu nombre, lo que solicitás, el departamento, el barrio y las notas o dirección que nos escribís. Estos datos se envían directamente a nuestro WhatsApp; el sitio no los guarda ni los almacena en ningún servidor propio.</p>
+      <p style="color:var(--muted); font-size:var(--fs-md);"><strong>Para qué los usamos.</strong> Únicamente para coordinar tu presupuesto, visita o consulta. No compartimos tus datos con terceros ni los usamos con fines publicitarios.</p>
+      <p style="color:var(--muted); font-size:var(--fs-md);"><strong>Cookies.</strong> Este sitio no utiliza cookies de seguimiento ni analíticas de terceros.</p>
+      <p style="color:var(--muted); font-size:var(--fs-md);"><strong>Contacto.</strong> Ante cualquier duda sobre esta política, escribinos al 094 872 605.</p>
+    </div>
+  </div>
+</div>
+
+<!-- BOTÓN FLOTANTE WHATSAPP -->
+<div class="wa-wrap">
+  <div class="wa-bubble" id="waBubble">
+    <button type="button" class="wa-bubble-close" id="waBubbleClose" aria-label="Cerrar">&times;</button>
+    ¿Tenés algún problema en casa? Escribinos, respondemos rápido.
+  </div>
+  <a class="wa-float" id="waFloat" href="https://wa.me/59894872605?text=Hola%2C%20necesito%20una%20solucion%20para%20mi%20hogar" target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp">
+    <img id="waIcon" class="wa-icon-img" src="whatsapp3.png" alt="Icono de WhatsApp" width="32" height="32">
+    <svg id="waIconFallback" class="wa-icon-fallback" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.198.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.004 2C6.486 2 2 6.486 2 12.004c0 1.987.584 3.835 1.588 5.392L2 22l4.72-1.554A9.96 9.96 0 0012.004 22C17.522 22 22 17.522 22 12.004 22 6.486 17.522 2 12.004 2zm0 18.13a8.1 8.1 0 01-4.135-1.14l-.297-.176-2.803.923.936-2.732-.194-.302a8.106 8.106 0 01-1.243-4.699c0-4.487 3.653-8.14 8.14-8.14 4.487 0 8.14 3.653 8.14 8.14 0 4.487-3.653 8.126-8.14 8.126z"/></svg>
+  </a>
+</div>
+
+<script>
+(function(){
+  'use strict';
+  var MI_TELEFONO_WHATSAPP = '59894872605';
+  var waBase = 'https://wa.me/' + MI_TELEFONO_WHATSAPP + '?text=';
+
+  /* ===================== DATOS ===================== */
+  // Fuente única: imágenes por servicio (alt/title descriptivos + responsive)
+  var servicios = [
+    { id:'electricidad', icon:'⚡', title:'Electricidad', color:'dim', span:'2',
+      img:{id:1071, alt:'Instalación y reparación eléctrica domiciliaria', title:'Electricidad domiciliaria'},
+      tag:'Eléctrico', price:'A presupuestar',
+      short:'Tableros, tomas, luces y fallas. Instalaciones seguras y prolijas.',
+      detail:'Instalaciones eléctricas nuevas, cambio de tableros, colocación de tomas y llaves, detección de fallas y arreglos generales. Trabajamos con materiales homologados y dejamos todo funcionando y prolijo.' },
+    { id:'canerias', icon:'🪠', title:'Cañerías / Agua', color:'accent2', span:'2',
+      img:{id:999, alt:'Reparación de cañerías de agua y griferías', title:'Reparación de cañerías'},
+      tag:'Plomería', price:'A presupuestar',
+      short:'Fugas, cañerías, griferías y desagües. Sin destrozar tu casa.',
+      detail:'Reparación de cañerías de agua, fugas, griferías, desagües y pérdidas. Ubicamos el problema y lo resolvemos con el menor impacto posible en tu hogar.' },
+    { id:'pintura', icon:'🖌️', title:'Pintura y paredes', color:'accent', span:'4',
+      img:{id:1092, alt:'Pintura y reparación de paredes interiores', title:'Pintura y revoque de paredes'},
+      tag:'Revoque y pintura', price:'A presupuestar',
+      short:'Pintá, revocá y repará paredes interiores. Terminaciones que se notan.',
+      detail:'Pintura interior, reparación de paredes, revoques, arreglo de grietas y humedad. Asesoramos colores y materiales para que el resultado sea prolijo y duradero.' },
+    { id:'ventanas', icon:'🪟', title:'Ventanas', color:'dim', span:'2',
+      img:{id:1080, alt:'Colocación y reparación de ventanas', title:'Ventanas y aberturas'},
+      tag:'Aberturas', price:'A presupuestar',
+      short:'Venta, reparación y colocación de ventanas y marcos.',
+      detail:'Colocación y reparación de ventanas, marcos y aberturas. Asesoramos sobre el mejor material para tu casa y dejamos todo sellado y funcionando.' },
+    { id:'rejas', icon:'🏗️', title:'Rejas y portones', color:'accent2', span:'2',
+      img:{id:342, alt:'Mantenimiento de rejas y portones de hierro y madera', title:'Rejas y portones'},
+      tag:'Herrería', price:'A presupuestar',
+      short:'Mantenimiento de hierro y madera. Portones que abren y cierran como nuevos.',
+      detail:'Mantenimiento, reparación y fabricación de rejas, portones de hierro y puertas de madera. Soldadura, pintura anticorrosiva, ajuste y lubricación de herrajes.' },
+    { id:'artefactos', icon:'🔌', title:'Artefactos', color:'dim', span:'2',
+      img:{id:1030, alt:'Colocación e instalación de artefactos del hogar', title:'Instalación de artefactos'},
+      tag:'Instalación', price:'A presupuestar',
+      short:'Colocación de artefactos del hogar: luz, cocina y más.',
+      detail:'Colocación e instalación de artefactos del hogar: luminarias, termotanques, calefones, extractores, aires y más. Instalación segura y conectada correctamente.' },
+    { id:'mantenimiento', icon:'🧰', title:'Mantenimiento general', color:'accent', span:'4',
+      img:{id:1029, alt:'Trabajos de mantenimiento general del hogar', title:'Mantenimiento general del hogar'},
+      tag:'Hogar', price:'A presupuestar',
+      short:'Cualquier arreglo, sin importar la complicación.',
+      detail:'Trabajos de mantenimiento en tu hogar, sin importar la complicación que te parezca. Si está roto, flojo, perdiendo o no funciona, lo vemos y lo solucionamos.' }
+  ];
+
+  function svcById(id){ for (var i=0;i<servicios.length;i++){ if (servicios[i].id===id) return servicios[i]; } return null; }
+  function imgUrl(pic, w, h){ return 'https://picsum.photos/id/' + pic + '/' + w + '/' + h; }
+
+  /* ===================== MENÚ MÓVIL ===================== */
+  var menuBtn = document.getElementById('menuBtn');
+  var mobileNav = document.getElementById('mobile-nav');
+  menuBtn.addEventListener('click', function(){
+    var isOpen = mobileNav.classList.toggle('open');
+    menuBtn.classList.toggle('open', isOpen);
+    menuBtn.setAttribute('aria-expanded', isOpen);
+  });
+  Array.prototype.forEach.call(mobileNav.querySelectorAll('a'), function(a){
+    a.addEventListener('click', function(){
+      mobileNav.classList.remove('open'); menuBtn.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded','false');
+    });
+  });
+
+  /* ===================== TICKER (8 items, duplicados en CSS por ancho) ===================== */
+  var Nombres = ['Electricidad','Cañerías','Pintura','Ventanas','Rejas y portones','Artefactos','Reparaciones','Mantenimiento'];
+  var ticker = document.getElementById('ticker');
+  var tickSet = Nombres.concat(Nombres);
+  ticker.innerHTML = tickSet.map(function(n){ return '<span>' + n + '</span>'; }).join('');
+
+  /* ===================== BENTO GRID ===================== */
+  function bentoTemplate(s){
+    var spanAttr = s.span ? ' data-span="' + s.span + '"' : '';
+    var wide = s.span === '4' ? ' wide' : '';
+    return '' +
+      '<article class="tile-wrap reveal' + wide + '"' + spanAttr + '>' +
+        '<button type="button" class="tile" data-color="' + s.color + '" data-id="' + s.id + '" aria-label="Ver detalle de ' + s.title + '">' +
+          '<div class="tile-img-top">' +
+            '<img class="lz" data-src="' + imgUrl(s.img.id,700,450) + '" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="' + s.img.alt + '" title="' + s.img.title + '" width="700" height="450" loading="lazy">' +
+          '</div>' +
+          '<div class="tile-body">' +
+            '<span class="num" aria-hidden="true">' + s.icon + '</span>' +
+            '<h3>' + s.title + '</h3>' +
+            '<p>' + s.short + '</p>' +
+            '<span class="tile-cta">Cotizar <span class="arr" aria-hidden="true">→</span></span>' +
+          '</div>' +
+        '</button>' +
+      '</article>';
+  }
+  var bentoGrid = document.getElementById('bentoGrid');
+  bentoGrid.innerHTML = servicios.map(bentoTemplate).join('');
+
+  /* ===================== SELECTOR POR AMBIENTES ===================== */
+  var rooms = {
+    banio:    { label:'Baño',      title:'En el baño',      prompt:'Comunes fugas, griferías, artefactos y paredes.' },
+    cocina:   { label:'Cocina',    title:'En la cocina',    prompt:'Cañerías, grifería, artefactos y paredes.' },
+    interior: { label:'Interior',  title:'En el interior',  prompt:'Paredes, pintura, electricidad y ventanas.' },
+    frente:   { label:'Frente',    title:'En el frente / jardín', prompt:'Rejas, portones, aberturas y mantenimiento exterior.' },
+    techo:    { label:'Techo',     title:'En el techo / azotea', prompt:'Filtraciones, canaletas y mantenimiento exterior.' }
+  };
+  var roomServices = {
+    banio: ['canerias','artefactos','pintura'],
+    cocina: ['canerias','artefactos','electricidad','mantenimiento'],
+    interior: ['pintura','electricidad','ventanas','mantenimiento'],
+    frente: ['rejas','ventanas','mantenimiento'],
+    techo: ['mantenimiento','pintura']
+  };
+
+  function buildHouseSVG(){
+    var NS = 'http://www.w3.org/2000/svg';
+    var svg = document.createElementNS(NS,'svg');
+    svg.setAttribute('viewBox','0 0 100 62');
+    svg.setAttribute('role','group');
+
+    // cielo / fondo
+    var rect = document.createElementNS(NS,'rect');
+    rect.setAttribute('x','0'); rect.setAttribute('y','0'); rect.setAttribute('width','100'); rect.setAttribute('height','62');
+    rect.setAttribute('fill','#3A3A37'); rect.setAttribute('stroke','#3A3A37');
+    svg.appendChild(rect);
+
+    // techo (triángulo) con zona "techo" en su lugar real
+    var roofOutline = document.createElementNS(NS,'polygon');
+    roofOutline.setAttribute('points','2,22 50,2 98,22');
+    roofOutline.setAttribute('fill','#2A2A28'); roofOutline.setAttribute('stroke','#111'); roofOutline.setAttribute('stroke-width','.8');
+    svg.appendChild(roofOutline);
+
+    // cuerpo de la casa
+    var house = document.createElementNS(NS,'rect');
+    house.setAttribute('x','8'); house.setAttribute('y','22'); house.setAttribute('width','84'); house.setAttribute('height','36');
+    house.setAttribute('fill','#2A2A28'); house.setAttribute('stroke','#111'); house.setAttribute('stroke-width','.8');
+    svg.appendChild(house);
+
+    var roomGeoms = {
+      techo:    { kind:'poly',   pts:'2,22 10,8 50,2 90,8 98,22', cx:50, cy:11 },   // el techo arriba, en su lugar
+      interior: { x:8,  y:24, w:56, h:17, cx:36, cy:32 },                            // interior superior
+      banio:    { x:64, y:24, w:28, h:17, cx:78, cy:32 },                            // baño a la derecha interior
+      cocina:   { x:8,  y:41, w:46, h:17, cx:31, cy:49 },                            // cocina inferior izquierda
+      frente:   { x:54, y:41, w:38, h:17, cx:73, cy:49 }                             // frente/jardín inferior derecha
+    };
+
+    Object.keys(rooms).forEach(function(key){
+      var g = document.createElementNS(NS,'g');
+      g.setAttribute('class','room');
+      g.setAttribute('role','button');
+      g.setAttribute('tabindex','0');
+      g.setAttribute('data-room',key);
+      g.setAttribute('aria-label','Servicios en ' + rooms[key].label);
+
+      var gv = roomGeoms[key];
+      var ro, cx = gv.cx, cy = gv.cy;
+      if (gv.kind === 'poly'){
+        ro = document.createElementNS(NS,'polygon');
+        ro.setAttribute('points', gv.pts);
+        cy = gv.cy - 3;
+      } else {
+        ro = document.createElementNS(NS,'rect');
+        ro.setAttribute('x',gv.x); ro.setAttribute('y',gv.y); ro.setAttribute('width',gv.w); ro.setAttribute('height',gv.h);
+        ro.setAttribute('rx','1');
+      }
+      ro.setAttribute('class','ro');
+      ro.setAttribute('fill','#595957'); ro.setAttribute('fill-opacity','.55'); ro.setAttribute('stroke','#111'); ro.setAttribute('stroke-width','.6');
+
+      var lbl = document.createElementNS(NS,'text');
+      lbl.setAttribute('class','room-label');
+      lbl.setAttribute('x',cx); lbl.setAttribute('y',cy);
+      lbl.setAttribute('text-anchor','middle'); lbl.setAttribute('dominant-baseline','middle');
+      lbl.textContent = rooms[key].label;
+
+      g.appendChild(ro); g.appendChild(lbl);
+      svg.appendChild(g);
+    });
+
+    return svg;
+  }
+
+  var houseIll = document.getElementById('houseIll');
+  houseIll.appendChild(buildHouseSVG());
+
+  var roomList = document.getElementById('roomList');
+  var roomTitle = document.getElementById('roomTitle');
+  var roomPrompt = document.getElementById('roomPrompt');
+
+  function renderRoom(key){
+    Array.prototype.forEach.call(document.querySelectorAll('.room'), function(r){
+      r.classList.toggle('active', r.dataset.room === key);
+    });
+    var r = rooms[key];
+    if (!r){ roomTitle.textContent='Elegí un ambiente'; roomPrompt.textContent='Hacé clic en una zona de la casa para ver los servicios disponibles en ese lugar.'; roomList.innerHTML=''; return; }
+    roomTitle.textContent = r.title;
+    roomPrompt.textContent = r.prompt;
+    var ids = roomServices[key];
+    roomList.innerHTML = ids.map(function(id){
+      var s = svcById(id);
+      return '<button type="button" class="room-item" data-id="' + id + '"><span>' + s.icon + ' ' + s.title + '</span><span class="go" aria-hidden="true">→</span></button>';
+    }).join('');
+  }
+
+  houseIll.addEventListener('click', function(e){
+    var room = e.target.closest ? e.target.closest('.room') : null;
+    if (room) renderRoom(room.dataset.room);
+  });
+  houseIll.addEventListener('keydown', function(e){
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    var room = e.target.closest ? e.target.closest('.room') : null;
+    if (room){ e.preventDefault(); renderRoom(room.dataset.room); }
+  });
+  renderRoom(null);
+
+  roomList.addEventListener('click', function(e){
+    var item = e.target.closest ? e.target.closest('.room-item') : null;
+    if (item) openModal(item.dataset.id);
+  });
+
+  /* ===================== MODAL GENÉRICO ===================== */
+  var detailModal = document.getElementById('detailModal');
+  var detailImage = document.getElementById('detailImage');
+  var detailTag = document.getElementById('detailTag');
+  var detailTitle = document.getElementById('detailTitle');
+  var detailText = document.getElementById('detailText');
+  var detailPrice = document.getElementById('detailPrice');
+  var detailCta = document.getElementById('detailCta');
+  var detailClose = document.getElementById('detailClose');
+  var privacyModal = document.getElementById('privacyModal');
+  var privacyClose = document.getElementById('privacyClose');
+
+  function lockScroll(){ document.body.style.overflow = 'hidden'; }
+  function unlockScroll(){ document.body.style.overflow = ''; }
+  function openModal(id){
+    var s = svcById(id);
+    if (!s) return;
+    detailImage.dataset.src = imgUrl(s.img.id, 900, 700);
+    detailImage.alt = s.img.alt;
+    detailImage.title = s.img.title;
+    lazyLoad(detailImage);
+    detailTag.textContent = s.tag;
+    detailTitle.textContent = s.title;
+    detailText.textContent = s.detail;
+    detailPrice.textContent = s.price;
+    detailCta.dataset.item = s.title;
+    detailModal.classList.add('open');
+    detailModal.setAttribute('aria-hidden','false');
+    lockScroll();
+  }
+  function closeModal(modal){
+    modal.classList.remove('open');
+    modal.setAttribute('aria-hidden','true');
+    if (!detailModal.classList.contains('open') && !privacyModal.classList.contains('open')) unlockScroll();
+  }
+  bentoGrid.addEventListener('click', function(e){
+    var tile = e.target.closest ? e.target.closest('.tile') : null;
+    if (tile) openModal(tile.dataset.id);
+  });
+  detailClose.addEventListener('click', function(){ closeModal(detailModal); });
+  detailModal.addEventListener('click', function(e){ if (e.target === detailModal) closeModal(detailModal); });
+  privacyClose.addEventListener('click', function(){ closeModal(privacyModal); });
+  privacyModal.addEventListener('click', function(e){ if (e.target === privacyModal) closeModal(privacyModal); });
+  document.getElementById('privacyBtn').addEventListener('click', function(){
+    privacyModal.classList.add('open');
+    privacyModal.setAttribute('aria-hidden','false');
+    lockScroll();
+  });
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape'){ closeModal(detailModal); closeModal(privacyModal); }
+  });
+  detailCta.addEventListener('click', function(){
+    agregarAlFormulario(detailCta.dataset.item);
+    closeModal(detailModal);
+  });
+
+  /* ===================== LAZY LOAD IMÁGENES (IntersectionObserver) ===================== */
+  function lazyLoad(img){
+    if (img.dataset.done) return;
+    var apply = function(){
+      img.dataset.done = '1';
+      img.src = img.dataset.src;
+      img.addEventListener('load', function(){ img.classList.add('loaded'); });
+      img.addEventListener('error', function(){ img.classList.add('loaded'); });
+    };
+    if ('IntersectionObserver' in window){
+      var obs = new IntersectionObserver(function(entries){
+        entries.forEach(function(en){
+          if (en.isIntersecting){ apply(); obs.unobserve(img); }
+        });
+      }, { rootMargin:'150px' });
+      obs.observe(img);
+    } else {
+      apply();
+    }
+  }
+  var lazyImgs = document.querySelectorAll('img.lz[data-src]');
+  Array.prototype.forEach.call(lazyImgs, function(img){ lazyLoad(img); });
+
+  /* ===================== FORMULARIO → WHATSAPP (con validación moderna) ===================== */
+  function valCampo(id){ var el = document.getElementById(id); return el ? el.value.trim() : ''; }
+  function setError(id, msg){
+    var field = document.getElementById(id).closest('.field');
+    var err = document.getElementById('err-' + id);
+    if (!field) return false;
+    if (msg){
+      field.classList.add('error');
+      err.textContent = msg;
+      return false;
+    }
+    field.classList.remove('error');
+    err.textContent = '';
+    return true;
+  }
+  document.getElementById('orderForm').addEventListener('submit', function(evento){
+    evento.preventDefault();
+    var nombre = valCampo('nombre');
+    var interes = valCampo('interes');
+    var zona = valCampo('zona');
+    var barrio = valCampo('barrio');
+    var detalles = valCampo('detalles');
+
+    var ok = true;
+    ok = setError('nombre', nombre ? '' : 'Por favor, escribí tu nombre.') && ok;
+    ok = setError('interes', interes ? '' : 'Contanos qué necesitás.') && ok;
+    ok = setError('zona', zona ? '' : 'Elegí tu departamento.') && ok;
+    ok = setError('barrio', barrio ? '' : 'Escribí tu barrio para coordinar.') && ok;
+    ok = setError('detalles', detalles ? '' : 'Describí el problema para que vayamos preparados.') && ok;
+    if (!ok) return;
+
+    var e = encodeURIComponent;
+    var mensaje = '*Nueva%20consulta%20%E2%80%94%20Soluci%C3%B3n%20Hogar*%0A%0A';
+    mensaje += '*Nombre:*%20' + e(nombre) + '%0A';
+    mensaje += '*Solicita:*%20' + e(interes) + '%0A';
+    mensaje += '*Departamento:*%20' + e(zona) + '%0A';
+    mensaje += '*Barrio:*%20' + e(barrio) + '%0A';
+    mensaje += '*Detalles:*%20' + e(detalles) + '%0A';
+
+    window.open(waBase + mensaje, '_blank', 'noopener');
+
+    // limpiar errores y mostrar confirmación
+    ['nombre','interes','zona','barrio','detalles'].forEach(function(id){ setError(id,''); });
+    var st = document.getElementById('waStatus');
+    st.classList.add('show');
+    setTimeout(function(){ st.classList.remove('show'); }, 6000);
+  });
+
+  // limpiar error al escribir
+  ['nombre','interes','zona','barrio','detalles'].forEach(function(id){
+    var el = document.getElementById(id);
+    el.addEventListener('input', function(){ setError(id, ''); });
+    el.addEventListener('change', function(){ setError(id, ''); });
+  });
+
+  function agregarAlFormulario(nombreItem){
+    document.getElementById('interes').value = nombreItem;
+    setError('interes','');
+    document.getElementById('cotizacion').scrollIntoView({behavior:'smooth', block:'start'});
+    setTimeout(function(){
+      var f = document.getElementById('interes');
+      if (f && f.focus) f.focus({preventScroll:true});
+    }, 500);
+  }
+
+  /* ===================== AÑO ===================== */
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  /* ===================== BARRA DE PROGRESO ===================== */
+  var progressBar = document.getElementById('progressBar');
+  function updateProgress(){
+    var st = window.scrollY || document.documentElement.scrollTop;
+    var dh = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    progressBar.style.width = (dh > 0 ? (st/dh)*100 : 0) + '%';
+  }
+  window.addEventListener('scroll', updateProgress, { passive:true });
+  window.addEventListener('resize', updateProgress);
+  updateProgress();
+
+  /* ===================== REVEAL EN SCROLL ===================== */
+  var revObs = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if (en.isIntersecting){ en.target.classList.add('in'); revObs.unobserve(en.target); }
+    });
+  }, {threshold:0.12});
+  Array.prototype.forEach.call(document.querySelectorAll('.reveal'), function(el){ revObs.observe(el); });
+
+  /* ===================== WHATSAPP FLOTANTE ===================== */
+  var waIcon = document.getElementById('waIcon');
+  var waIconFallback = document.getElementById('waIconFallback');
+  waIcon.addEventListener('error', function(){ waIcon.style.display='none'; waIconFallback.style.display='block'; });
+
+  var waBubble = document.getElementById('waBubble');
+  var waBubbleClose = document.getElementById('waBubbleClose');
+  var tShow = setTimeout(function(){ waBubble.classList.add('show'); }, 2500);
+  var tHide = setTimeout(function(){ waBubble.classList.remove('show'); }, 14000);
+  waBubbleClose.addEventListener('click', function(){ clearTimeout(tHide); waBubble.classList.remove('show'); });
+
+  var waFloat = document.getElementById('waFloat');
+  setInterval(function(){
+    waFloat.classList.add('shake');
+    setTimeout(function(){ waFloat.classList.remove('shake'); }, 600);
+  }, 25000);
+})();
+</script>
+
+</body>
+</html>
