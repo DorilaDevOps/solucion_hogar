@@ -35,7 +35,10 @@ start index.html
 
 ```
 ├── index.html            # Landing page completa (HTML + CSS + JS en un solo archivo)
-├── bird_colores.png      # Logo / favicon
+├── bird_colores.png      # Logo original (820x462) / favicon 192px
+├── og-image.png          # Imagen para compartir en redes (1200x630, Open Graph)
+├── favicon-32x32.png     # Favicon de pestaña derivado del logo
+├── apple-touch-icon.png  # Icono para iOS/Android derivado del logo
 ├── whatsapp3.png         # Icono del botón flotante de WhatsApp
 ├── README.md
 └── .gitignore
