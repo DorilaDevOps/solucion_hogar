@@ -19,3 +19,6 @@ Desktop.ini
 # Dependencias (por si se agrega tooling luego)
 node_modules/
 dist/
+
+# Documentación interna / notas de diseño
+documentacion.txt

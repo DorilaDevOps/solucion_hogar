@@ -24,20 +24,19 @@ Trabajamos en todo Uruguay, en cualquier ambiente de tu casa: baño, cocina, int
 
 ## Empezar
 
-El sitio no requiere instalación ni dependencias. Abrí `solucion_hogar.html` en cualquier navegador moderno.
+El sitio no requiere instalación ni dependencias. Está publicado en [Netlify](https://solucionhogar.netlify.app/) o podés abrir `index.html` en cualquier navegador moderno.
 
 ```bash
 # Solo abrí el archivo en tu navegador
-start solucion_hogar.html
+start index.html
 ```
 
 ## Estructura
 
 ```
-├── solucion_hogar.html   # Landing page completa (HTML + CSS + JS en un solo archivo)
+├── index.html            # Landing page completa (HTML + CSS + JS en un solo archivo)
 ├── bird_colores.png      # Logo / favicon
 ├── whatsapp3.png         # Icono del botón flotante de WhatsApp
-├── documentacion.txt     # Documentación y conceptos del proyecto
 ├── README.md
 └── .gitignore
 ```
