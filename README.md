@@ -24,24 +24,37 @@ Trabajamos en todo Uruguay, en cualquier ambiente de tu casa: baño, cocina, int
 
 ## Empezar
 
-El sitio no requiere instalación ni dependencias. Está publicado en [Netlify](https://solucionhogar.netlify.app/) o podés abrir `index.html` en cualquier navegador moderno.
+El sitio no requiere instalación ni dependencias. Está publicado en [Netlify](https://solucionhogar.netlify.app/). Para desarrollo local usá un servidor estático (las subpáginas usan rutas absolutas, no resuelven abriendo los archivos con `file://`).
 
 ```bash
-# Solo abrí el archivo en tu navegador
-start index.html
+# Opción 1: Python
+python -m http.server 8000
+# Opción 2: Node
+npx serve
+
+# Luego abrí http://localhost:8000
 ```
+
+Servicios SEO en subrutas propias, ej. [/servicios/electricidad/](https://solucionhogar.netlify.app/servicios/electricidad/).
 
 ## Estructura
 
 ```
-├── index.html            # Landing page completa (HTML + CSS + JS en un solo archivo)
+├── index.html            # Landing page (raíz)
+├── assets/
+│   ├── base.css          # Estilos compartidos (raíz + subpáginas)
+│   └── base.js           # Scripts comunes (menú, FAQ, reveal, WhatsApp, año)
+├── servicios/            # Subpáginas SEO por servicio
+│   └── <slug>/index.html # electricidad, canerias, pintura, ventanas,
+│                         # rejas-portones, artefactos, mantenimiento
+├── og/                   # Imágenes Open Graph por servicio (1200x630)
 ├── bird_colores.png      # Logo original (820x462) / favicon 192px
 ├── og-image.png          # Imagen para compartir en redes (1200x630, Open Graph)
 ├── favicon-32x32.png     # Favicon de pestaña derivado del logo
 ├── apple-touch-icon.png  # Icono para iOS/Android derivado del logo
 ├── img/                  # Imágenes de servicios (7 PNG generados, 900x700)
 ├── robots.txt            # Directivas para buscadores
-├── sitemap.xml           # Sitemap XML
+├── sitemap.xml           # Sitemap XML (8 URLs)
 ├── whatsapp3.png         # Icono del botón flotante de WhatsApp
 ├── README.md
 └── .gitignore
