@@ -35,7 +35,9 @@ npx serve
 # Luego abrí http://localhost:8000
 ```
 
-Servicios SEO en subrutas propias, ej. [/servicios/electricidad/](https://solucionhogar.netlify.app/servicios/electricidad/).
+Servicios SEO en subrutas propias, ej. [/servicios/electricidad/](https://solucionhogar.netlify.app/servicios/electricidad/). Además [Clientes satisfechos](https://solucionhogar.netlify.app/clientes-satisfechos/) (portafolio de trabajos y reseñas) y [Preguntas frecuentes](https://solucionhogar.netlify.app/preguntas-frecuentes/) (centro de ayuda).
+
+> Nota: el portafolio se publica con casos y reseñas de ejemplo. Antes de mostrar imágenes o testimonios reales, reemplazá los archivos de `img/trabajos/` y el contenido de las tarjetas, y recién ahí agregá los subsidios `Review`/`AggregateRating` en el JSON-LD.
 
 ## Estructura
 
@@ -47,14 +49,17 @@ Servicios SEO en subrutas propias, ej. [/servicios/electricidad/](https://soluci
 ├── servicios/            # Subpáginas SEO por servicio
 │   └── <slug>/index.html # electricidad, canerias, pintura, ventanas,
 │                         # rejas-portones, artefactos, mantenimiento
-├── og/                   # Imágenes Open Graph por servicio (1200x630)
+├── clientes-satisfechos/ # Portafolio: trabajos realizados + reseñas de clientes
+├── preguntas-frecuentes/ # Centro de ayuda (FAQ) con FAQPage JSON-LD
+├── og/                   # Imágenes Open Graph por servicio y página (1200x630)
 ├── bird_colores.png      # Logo original (820x462) / favicon 192px
 ├── og-image.png          # Imagen para compartir en redes (1200x630, Open Graph)
 ├── favicon-32x32.png     # Favicon de pestaña derivado del logo
 ├── apple-touch-icon.png  # Icono para iOS/Android derivado del logo
 ├── img/                  # Imágenes de servicios (7 PNG generados, 900x700)
+├── img/trabajos/         # Marcos antes/después del portafolio (reemplazo por fotos reales)
 ├── robots.txt            # Directivas para buscadores
-├── sitemap.xml           # Sitemap XML (8 URLs)
+├── sitemap.xml           # Sitemap XML (10 URLs)
 ├── whatsapp3.png         # Icono del botón flotante de WhatsApp
 ├── README.md
 └── .gitignore
