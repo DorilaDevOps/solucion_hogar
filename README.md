@@ -39,6 +39,9 @@ start index.html
 ├── og-image.png          # Imagen para compartir en redes (1200x630, Open Graph)
 ├── favicon-32x32.png     # Favicon de pestaña derivado del logo
 ├── apple-touch-icon.png  # Icono para iOS/Android derivado del logo
+├── img/                  # Imágenes de servicios (7 PNG generados, 900x700)
+├── robots.txt            # Directivas para buscadores
+├── sitemap.xml           # Sitemap XML
 ├── whatsapp3.png         # Icono del botón flotante de WhatsApp
 ├── README.md
 └── .gitignore
