@@ -403,37 +403,37 @@
   /* ===================== DATOS ===================== */
   // Fuente única: imágenes por servicio (alt/title descriptivos + responsive)
   var servicios = [
-    { id:'electricidad', icon:'⚡', title:'Electricidad', color:'dim', span:'2', slug:'electricidad',
+    { id:'electricidad', icon:'⚡', title:'Electricidad', color:'dim', slug:'electricidad',
       img:{id:'electricidad', alt:'Instalación y reparación eléctrica domiciliaria', title:'Electricidad domiciliaria'},
       tag:'Eléctrico', price:'A presupuestar',
       short:'Tableros, tomas, luces y fallas. Instalaciones seguras y prolijas.',
       detail:'Instalaciones eléctricas nuevas, cambio de tableros, colocación de tomas y llaves, detección de fallas y arreglos generales. Trabajamos con materiales homologados y dejamos todo funcionando y prolijo.' },
-    { id:'canerias', icon:'🪠', title:'Cañerías / Agua', color:'accent2', span:'2', slug:'canerias',
+    { id:'canerias', icon:'🪠', title:'Cañerías / Agua', color:'accent2', slug:'canerias',
       img:{id:'canerias', alt:'Reparación de cañerías de agua y griferías', title:'Reparación de cañerías'},
       tag:'Plomería', price:'A presupuestar',
       short:'Fugas, cañerías, griferías y desagües. Sin destrozar tu casa.',
       detail:'Reparación de cañerías de agua, fugas, griferías, desagües y pérdidas. Ubicamos el problema y lo resolvemos con el menor impacto posible en tu hogar.' },
-    { id:'pintura', icon:'🖌️', title:'Pintura y paredes', color:'accent', span:'4', slug:'pintura',
+    { id:'pintura', icon:'🖌️', title:'Pintura y paredes', color:'accent', slug:'pintura',
       img:{id:'pintura', alt:'Pintura y reparación de paredes interiores', title:'Pintura y revoque de paredes'},
       tag:'Revoque y pintura', price:'A presupuestar',
       short:'Pintá, revocá y repará paredes interiores. Terminaciones que se notan.',
       detail:'Pintura interior, reparación de paredes, revoques, arreglo de grietas y humedad. Asesoramos colores y materiales para que el resultado sea prolijo y duradero.' },
-    { id:'ventanas', icon:'🪟', title:'Ventanas', color:'dim', span:'2', slug:'ventanas',
+    { id:'ventanas', icon:'🪟', title:'Ventanas', color:'dim', slug:'ventanas',
       img:{id:'ventanas', alt:'Colocación y reparación de ventanas', title:'Ventanas y aberturas'},
       tag:'Aberturas', price:'A presupuestar',
       short:'Venta, reparación y colocación de ventanas y marcos.',
       detail:'Colocación y reparación de ventanas, marcos y aberturas. Asesoramos sobre el mejor material para tu casa y dejamos todo sellado y funcionando.' },
-    { id:'rejas', icon:'🏗️', title:'Rejas y portones', color:'accent2', span:'2', slug:'rejas-portones',
+    { id:'rejas', icon:'🏗️', title:'Rejas y portones', color:'accent2', slug:'rejas-portones',
       img:{id:'rejas', alt:'Mantenimiento de rejas y portones de hierro y madera', title:'Rejas y portones'},
       tag:'Herrería', price:'A presupuestar',
       short:'Mantenimiento de hierro y madera. Portones que abren y cierran como nuevos.',
       detail:'Mantenimiento, reparación y fabricación de rejas, portones de hierro y puertas de madera. Soldadura, pintura anticorrosiva, ajuste y lubricación de herrajes.' },
-    { id:'artefactos', icon:'🔌', title:'Artefactos', color:'dim', span:'2', slug:'artefactos',
+    { id:'artefactos', icon:'🔌', title:'Artefactos', color:'dim', slug:'artefactos',
       img:{id:'artefactos', alt:'Colocación e instalación de artefactos del hogar', title:'Instalación de artefactos'},
       tag:'Instalación', price:'A presupuestar',
       short:'Colocación de artefactos del hogar: luz, cocina y más.',
       detail:'Colocación e instalación de artefactos del hogar: luminarias, termotanques, calefones, extractores, aires y más. Instalación segura y conectada correctamente.' },
-    { id:'mantenimiento', icon:'🧰', title:'Mantenimiento general', color:'accent', span:'4', slug:'mantenimiento',
+    { id:'mantenimiento', icon:'🧰', title:'Mantenimiento general', color:'accent', slug:'mantenimiento',
       img:{id:'mantenimiento', alt:'Trabajos de mantenimiento general del hogar', title:'Mantenimiento general del hogar'},
       tag:'Hogar', price:'A presupuestar',
       short:'Cualquier arreglo, sin importar la complicación.',
@@ -451,10 +451,8 @@
 
   /* ===================== BENTO GRID ===================== */
   function bentoTemplate(s){
-    var spanAttr = s.span ? ' data-span="' + s.span + '"' : '';
-    var wide = s.span === '4' ? ' wide' : '';
     return '' +
-      '<article class="tile-wrap reveal' + wide + '"' + spanAttr + '>' +
+      '<article class="tile-wrap reveal">' +
         '<div class="tile" role="button" tabindex="0" data-color="' + s.color + '" data-id="' + s.id + '" aria-label="Ver detalle de ' + s.title + '">' +
           '<div class="tile-img-top">' +
             '<img class="lz" data-src="' + imgUrl(s.img.id,700,450) + '" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="' + s.img.alt + '" title="' + s.img.title + '" width="900" height="700" loading="lazy">' +

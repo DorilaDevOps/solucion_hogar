@@ -414,13 +414,7 @@
   /* ===================== BREAKPOINTS AGRUPADOS ===================== */
   /* tablet / medio: grillas de 2+ columnas y asimetría del bento */
   @media(min-width:720px){
-    .bento{grid-template-columns:repeat(6,1fr); grid-auto-rows:minmax(210px,auto);}
-    .tile-wrap.wide{grid-column:span 4;}
-    .tile-wrap.tall{grid-row:span 2;}
-    .tile-wrap.full{grid-column:span 6;}
-    .tile-wrap[data-span="2"]{grid-column:span 2;}
-    .tile-wrap[data-span="3"]{grid-column:span 3;}
-    .tile-wrap[data-span="4"]{grid-column:span 4;}
+    .bento{grid-template-columns:repeat(3,1fr);}
     .steps{grid-template-columns:repeat(3,1fr);}
     .hist-grid{grid-template-columns:repeat(3,1fr);}
     .trust-grid{grid-template-columns:repeat(4,1fr);}
