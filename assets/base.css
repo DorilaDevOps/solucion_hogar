@@ -12,6 +12,7 @@
     --accent-dim:#E3ECFD;
     --green:#0E9F6E;
     --green-soft:#54c07f;   /* verde suave (acento de servicio) */
+    --green-soft-trans:rgba(84,192,127,.30);
     --green-soft-dim:rgba(84,192,127,.14);
     --green-soft-glow:rgba(84,192,127,.28);
     --link:#1F6FEB;
@@ -147,8 +148,9 @@
   .hero h1 .accent2{color:var(--accent-2);}
   .hero-sub{font-size:clamp(1rem,1rem + .4vw,1.25rem); font-weight:500; max-width:54ch; margin-bottom:14px;}
   .hero-sub + .hero-sub{margin-bottom:14px;}
-  .hero-smallline{font-family:var(--font-mega); text-transform:uppercase; letter-spacing:.03em; font-size:clamp(.8rem,1vw,.95rem); color:var(--muted); margin-bottom:26px;}
-  .hero-actions{display:flex; flex-wrap:wrap; gap:14px; margin-bottom:26px;}
+  .hero-actions{display:flex; flex-direction:column; align-items:stretch; gap:12px; margin-bottom:26px;}
+  .hero-actions .btn{width:100%; background:var(--green-soft-trans); color:var(--ink);}
+  .hero-actions .btn:hover,.hero-actions .btn:active{background:var(--accent-2); color:var(--white);}
   .btn{
     display:inline-flex; align-items:center; justify-content:center; gap:10px;
     font-family:var(--font-display); text-transform:uppercase; letter-spacing:.02em;
@@ -439,6 +441,10 @@
     .svc-cards{grid-template-columns:repeat(2,1fr);}
     .svc-cta .wrap{grid-template-columns:1.2fr .8fr; align-items:center;}
     .related{grid-template-columns:repeat(3,1fr);}
+  }
+  /* teléfonos/tablets: ocultar panel derecho del hero (solo desktop) */
+  @media(max-width:899px){
+    .hero-right{display:none;}
   }
   /* desktop: navegación completa y layouts de 2 columnas */
   @media(min-width:900px){
