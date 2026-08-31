@@ -185,27 +185,12 @@
     </div>
   </section>
 
-  <!-- CONFIANZA -->
-  <section id="confianza" aria-labelledby="confianza-title">
-    <div class="wrap">
-      <h2 class="sec-title" id="confianza-title">¿Por qué confiar?</h2>
-      <p class="sec-sub">No es solo reparar: es cuidar tu casa como si fuera la nuestra.</p>
-      <div class="trust-grid">
-        <div class="trust-item reveal"><h4>Rapidez</h4><p>Respuesta ágil y aviso de cualquier imprevisto a tiempo.</p></div>
-        <div class="trust-item reveal"><h4>Precios justos</h4><p>Presupuesto claro y sin cargos ocultos antes de empezar.</p></div>
-        <div class="trust-item reveal"><h4>Puntualidad</h4><p>Llegamos al horario y terminamos en el plazo pactado.</p></div>
-        <div class="trust-item reveal"><h4>Mano de obra</h4><p>Oficios calificados y con experiencia, en tu zona.</p></div>
-      </div>
-    </div>
-  </section>
-
   <!-- COTIZACIÓN / FORMULARIO -->
   <section id="cotizacion" aria-labelledby="cotizacion-title">
     <div class="wrap">
-      <h2 class="sec-title" id="cotizacion-title">Desligate del problema.</h2>
+      <h2 class="sec-title" id="cotizacion-title">¿CÓMO FUNCIONA SOLUCION HOGAR?</h2>
       <div class="quote-grid">
         <div class="quote-info">
-          <h3>Soluciones rápidas para tu hogar.</h3>
           <p>Contanos tu caso, aunque te parezca complejo. Coordinamos la visita y te pasamos el presupuesto. Vos te ocupás de vivir, nosotros de tu casa.</p>
           <ul class="quote-steps">
             <li><span class="n">1</span>Completás el formulario en menos de un minuto.</li>
@@ -267,6 +252,21 @@
       </div>
     </div>
   </section>
+  
+  <!-- CONFIANZA -->
+  <section id="confianza" aria-labelledby="confianza-title">
+    <div class="wrap">
+      <h2 class="sec-title" id="confianza-title">¿Por qué confiar?</h2>
+      <p class="sec-sub">No es solo reparar: es cuidar tu casa como si fuera la nuestra.</p>
+      <div class="trust-grid">
+        <div class="trust-item reveal"><h4>Rapidez</h4><p>Respuesta ágil y aviso de cualquier imprevisto a tiempo.</p></div>
+        <div class="trust-item reveal"><h4>Precios justos</h4><p>Presupuesto claro y sin cargos ocultos antes de empezar.</p></div>
+        <div class="trust-item reveal"><h4>Puntualidad</h4><p>Llegamos al horario y terminamos en el plazo pactado.</p></div>
+        <div class="trust-item reveal"><h4>Mano de obra</h4><p>Oficios calificados y con experiencia.</p></div>
+      </div>
+    </div>
+  </section>
+  
 </main>
 
 <footer>
@@ -290,7 +290,7 @@
 <div>
 <h5>Servicios</h5>
 <ul>
-<li><a href="servicios/asistencia/">Asistencia urgente</a></li>
+<li><a href="#cotizacion">Asistencia urgente</a></li>
 <li><a href="servicios/electricidad/">Electricidad</a></li>
 <li><a href="servicios/canerias/">Cañerías</a></li>
 <li><a href="servicios/pintura/">Pintura y paredes</a></li>
@@ -298,11 +298,11 @@
 <li><a href="servicios/rejas-portones/">Rejas y portones</a></li>
 <li><a href="servicios/artefactos/">Artefactos</a></li>
 <li><a href="servicios/mantenimiento/">Mantenimiento</a></li>
-<li><a href="servicios/instalaciones/">Instalaciones</a></li>
-<li><a href="servicios/membrana-asfaltica/">Membrana asfáltica</a></li>
-<li><a href="servicios/yeso/">Yeso</a></li>
-<li><a href="servicios/pisos/">Pisos</a></li>
-<li><a href="servicios/cortinas-enrollar/">Cortinas de enrollar</a></li>
+<li><a href="#servicios">Instalaciones</a></li>
+<li><a href="#servicios">Membrana asfáltica</a></li>
+<li><a href="#servicios">Yeso</a></li>
+<li><a href="#servicios">Pisos</a></li>
+<li><a href="#servicios">Cortinas de enrollar</a></li>
 </ul>
 </div>
 <div>
@@ -376,32 +376,32 @@
   /* ===================== DATOS ===================== */
   // Fuente única: imágenes por servicio (alt/title descriptivos + responsive)
   var servicios = [
-    { id:'asistencia', icon:'⚡', title:'Asistencia urgente', color:'urgente', slug:'asistencia',
+    { id:'asistencia', icon:'⚡', title:'Asistencia urgente', color:'urgente', slug:null,
       img:{id:'mantenimiento', alt:'Asistencia urgente para emergencias del hogar', title:'Asistencia urgente'},
       tag:'Urgente', price:'Prioridad',
       short:'Fugas, cortes de luz o emergencias en casa. Respondemos rápido.',
       detail:'Una emergencia no espera. Si tenés una fuga de agua, un corte de luz, una pérdida o cualquier urgencia en tu hogar, escribinos y priorizamos tu visita. Asistencia urgente con respuesta ágil.' },
-    { id:'instalaciones', icon:'🔧', title:'Instalaciones', color:'dim', slug:'instalaciones',
+    { id:'instalaciones', icon:'🔧', title:'Instalaciones', color:'dim', slug:null,
       img:{id:'artefactos', alt:'Instalaciones para el hogar', title:'Instalaciones'},
       tag:'Instalación', price:'A presupuestar',
       short:'Instalaciones y montaje de artefactos, luces, aires y más.',
       detail:'Realizamos instalaciones de artefactos, luminarias, aires, canaletas y más, con materiales homologados y un trabajo prolijo, seguro y conectado correctamente.' },
-    { id:'membrana', icon:'🏠', title:'Membrana asfáltica', color:'accent', slug:'membrana-asfaltica',
+    { id:'membrana', icon:'🏠', title:'Membrana asfáltica', color:'accent', slug:null,
       img:{id:'mantenimiento', alt:'Colocación y reparación de membrana asfáltica', title:'Membrana asfáltica'},
       tag:'Techos', price:'A presupuestar',
       short:'Reparamos filtraciones y colocamos membrana asfáltica en techos y azoteas.',
       detail:'Colocación, reparación y mantenimiento de membrana asfáltica en techos y azoteas. Terminamos con las filtraciones y el ingreso de agua, dejando tu cubierta protegida.' },
-    { id:'yeso', icon:'🧱', title:'Yeso', color:'dim', slug:'yeso',
+    { id:'yeso', icon:'🧱', title:'Yeso', color:'dim', slug:null,
       img:{id:'pintura', alt:'Trabajos de yeso, cielorrasos y placas', title:'Yeso y cielorrasos'},
       tag:'Yeso', price:'A presupuestar',
       short:'Cielorrasos, tabiques, placas y reparaciones en yeso.',
       detail:'Colocación y reparación de cielorrasos, tabiques, placas de yeso y terminaciones. Trabajos prolijos para paredes y techos, listos para pintar.' },
-    { id:'pisos', icon:'🪵', title:'Pisos', color:'accent2', slug:'pisos',
+    { id:'pisos', icon:'🪵', title:'Pisos', color:'accent2', slug:null,
       img:{id:'mantenimiento', alt:'Colocación y reparación de pisos', title:'Pisos'},
       tag:'Pisos', price:'A presupuestar',
       short:'Colocación, reparación y terminación de pisos para tu hogar.',
       detail:'Colocación y reparación de pisos de cerámica, porcelanato, flotante y parquet. Nivelamos, instalamos y dejamos tu piso parejo y prolijo.' },
-    { id:'cortinas', icon:'🪟', title:'Cortinas de enrollar', color:'dim', slug:'cortinas-enrollar',
+    { id:'cortinas', icon:'🪟', title:'Cortinas de enrollar', color:'dim', slug:null,
       img:{id:'ventanas', alt:'Colocación y reparación de cortinas de enrollar', title:'Cortinas de enrollar'},
       tag:'Cortinas', price:'A presupuestar',
       short:'Colocación y reparación de cortinas de enrollar y persianas.',
@@ -477,11 +477,11 @@
     techo:    { label:'Techo',     title:'En el techo / azotea', prompt:'Filtraciones, canaletas y mantenimiento exterior.' }
   };
   var roomServices = {
-    banio: ['asistencia','canerias','artefactos','instalaciones','pintura','yeso'],
-    cocina: ['asistencia','canerias','artefactos','instalaciones','electricidad','mantenimiento'],
-    interior: ['asistencia','pintura','yeso','pisos','electricidad','ventanas','cortinas','instalaciones','mantenimiento'],
-    frente: ['asistencia','rejas','ventanas','cortinas','pisos','mantenimiento'],
-    techo: ['asistencia','membrana','mantenimiento','instalaciones','pintura','yeso']
+    banio: ['canerias','artefactos','pintura'],
+    cocina: ['canerias','artefactos','electricidad','mantenimiento'],
+    interior: ['pintura','electricidad','ventanas','mantenimiento'],
+    frente: ['rejas','ventanas','mantenimiento'],
+    techo: ['mantenimiento','pintura']
   };
 
   function buildHouseSVG(){
