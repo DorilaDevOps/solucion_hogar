@@ -231,14 +231,6 @@
   .room-item:hover,.room-item:focus-visible{transform:translate(-2px,-2px); box-shadow:6px 6px 0 var(--accent);}
   .room-item span{font-weight:600; font-size:var(--fs-md);}
   .room-item .go{font-family:var(--font-mega); font-size:1.1rem; color:var(--accent);}
-/* ---- cómo funciona ---- */
-  #como{background:var(--paper);}
-  .steps{display:grid; gap:18px; margin-top:40px;}
-  .step{background:var(--white); border:1px solid var(--line); border-radius:12px; padding:28px 26px; box-shadow:0 1px 3px rgba(0,0,0,.06); transition:box-shadow var(--dur-med) var(--ease), transform var(--dur-med) var(--ease);}
-  .step:hover{box-shadow:0 10px 30px rgba(0,0,0,.10); transform:translateY(-3px);}
-  .step .step-num{display:inline-flex; align-items:center; justify-content:center; width:32px; height:32px; border-radius:50%; background:var(--accent); color:var(--white); font-family:var(--font-display); font-size:.85rem; line-height:1; margin-bottom:16px;}
-  .step h3{font-family:var(--font-display); text-transform:uppercase; font-size:1rem; letter-spacing:.02em; margin-bottom:8px;}
-  .step p{color:var(--muted); font-size:var(--fs-md); line-height:1.5;}
 
   /* ---- confianza ---- */
   #confianza{background:var(--paper); border-bottom:3px solid var(--ink);}
@@ -431,7 +423,6 @@
   /* tablet / medio: grillas de 2+ columnas y asimetría del bento */
   @media(min-width:720px){
     .bento{grid-template-columns:repeat(3,1fr);}
-    .steps{grid-template-columns:repeat(3,1fr);}
     .trust-grid{grid-template-columns:repeat(4,1fr);}
     .svc-cards{grid-template-columns:repeat(2,1fr);}
     .svc-cta .wrap{grid-template-columns:1.2fr .8fr; align-items:center;}
