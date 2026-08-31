@@ -85,7 +85,7 @@
   function updateBackTop(){
     var st = window.scrollY || document.documentElement.scrollTop;
     var dh = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    backTop.classList.toggle('show', dh > 0 && (st / dh) >= 0.5);
+    backTop.classList.toggle('show', dh > 0 && (st / dh) >= 0.4);
   }
   var btTicking = false;
   function onBackScroll(){
