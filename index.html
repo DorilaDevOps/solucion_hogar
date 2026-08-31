@@ -42,7 +42,7 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Store",
+  "@type": "LocalBusiness",
   "name": "Solución Hogar",
   "description": "Arreglos, reparaciones, instalaciones, reformas y mantenimiento para tu hogar: electricidad, plomería, pintura, ventanas, rejas y portones, con profesionales de confianza y precios justos.",
   "url": "https://solucionhogar.netlify.app/",
@@ -110,7 +110,7 @@
       <a href="#servicios">Servicios</a>
       <a href="#ambientes">Ver tu casa</a>
       <a href="#cotizacion">Cotización inmediata</a>
-      <a href="#historia">Confianza</a>
+      <a href="#confianza">Confianza</a>
     </div>
   </nav>
 </header>
@@ -146,7 +146,22 @@
     <div class="wrap">
       <h2 class="sec-title" id="servicios-title">Todo lo que tu hogar necesita.</h2>
       <p class="sec-sub">Reparaciones, instalaciones y mantenimiento: electricista, plomería, pintura, cortinas de enrollar y más. Tocá un servicio y cotizá por WhatsApp.</p>
-      <div class="bento" id="bentoGrid"><!-- generado en JS --></div>
+      <div class="bento" id="bentoGrid"><!-- generado en JS -->
+        <noscript>
+          <div class="noscript-box">
+            <p>Para explorar todos los servicios desde acá necesitás JavaScript habilitado. Mientras tanto, podés visitar directamente cada servicio:</p>
+            <ul>
+              <li><a href="servicios/electricidad/">Electricidad</a></li>
+              <li><a href="servicios/canerias/">Cañerías</a></li>
+              <li><a href="servicios/pintura/">Pintura y paredes</a></li>
+              <li><a href="servicios/ventanas/">Ventanas</a></li>
+              <li><a href="servicios/rejas-portones/">Rejas y portones</a></li>
+              <li><a href="servicios/artefactos/">Artefactos</a></li>
+              <li><a href="servicios/mantenimiento/">Mantenimiento</a></li>
+            </ul>
+          </div>
+        </noscript>
+      </div>
     </div>
   </section>
 
@@ -164,6 +179,7 @@
           <h3 id="roomTitle">Elegí un ambiente</h3>
           <p class="prompt" id="roomPrompt">Hacé clic en una zona de la casa para ver los servicios disponibles en ese lugar.</p>
           <div class="room-list" id="roomList"></div>
+          <noscript><p class="prompt" style="margin-top:14px;">El plano interactivo necesita JavaScript. <a href="#servicios">Mirá los servicios arriba</a>.</p></noscript>
         </div>
       </div>
     </div>
@@ -176,34 +192,20 @@
       <p class="sec-sub">Todo lo necesario para que te desligues del problema. Vos lo describís igual de complicado que te parezca; nosotros nos encargamos.</p>
       <div class="steps">
         <article class="step reveal">
-          <span class="big-num">01</span>
+          <span class="step-num">01</span>
           <h3>Pedís</h3>
           <p>Contás qué pasó y dónde, por WhatsApp o el formulario. Sin tecnicismos.</p>
         </article>
         <article class="step reveal">
-          <span class="big-num">02</span>
+          <span class="step-num">02</span>
           <h3>Coordinamos</h3>
           <p>Con distancia, te pasamos presupuesto claro, fecha y horario. Sin sorpresas.</p>
         </article>
         <article class="step reveal">
-          <span class="big-num">03</span>
+          <span class="step-num">03</span>
           <h3>Listo</h3>
           <p>Recibís atención puntual, trabajo prolijo y quedás desligado del problema.</p>
         </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- HISTORIA / CONFIANZA EDITORIAL (scrollytelling) -->
-  <section id="historia" aria-labelledby="historia-title">
-    <div class="wrap">
-      <h2 class="sec-title" id="historia-title">Profesionales de confianza para cada necesidad.</h2>
-      <p class="quote">“El lugar donde dejás un problema y encontrás una <mark>solución</mark>.”</p>
-      <p class="sec-sub" style="color:var(--white-soft);">Oficios confiables. Trabajos bien hechos.</p>
-      <div class="hist-grid">
-        <div class="hist-card reveal"><span class="h-ic" aria-hidden="true">🏠</span><div><h4>Confianza y tranquilidad</h4><p>Entrás a tu casa y sabés que el problema quedó resuelto, sin sorpresas.</p></div></div>
-        <div class="hist-card reveal"><span class="h-ic" aria-hidden="true">⚡</span><div><h4>Rapidez y solución</h4><p>Respuesta ágil y eficiente, para que no esperés más de lo necesario.</p></div></div>
-        <div class="hist-card reveal"><span class="h-ic" aria-hidden="true">🔧</span><div><h4>Oficios + calidad</h4><p>Trabajo bien hecho, con mano de obra calificada y en tu zona.</p></div></div>
       </div>
     </div>
   </section>
@@ -214,10 +216,10 @@
       <h2 class="sec-title" id="confianza-title">¿Por qué confiar?</h2>
       <p class="sec-sub">No es solo reparar: es cuidar tu casa como si fuera la nuestra.</p>
       <div class="trust-grid">
-        <div class="trust-item reveal"><span class="ic" aria-hidden="true">⚡</span><h4>Rapidez</h4><p>Respuesta ágil y aviso de cualquier imprevisto a tiempo.</p></div>
-        <div class="trust-item reveal"><span class="ic" aria-hidden="true">💰</span><h4>Precios justos</h4><p>Presupuesto claro y sin cargos ocultos antes de empezar.</p></div>
-        <div class="trust-item reveal"><span class="ic" aria-hidden="true">⏰</span><h4>Puntualidad</h4><p>Llegamos al horario y terminamos en el plazo pactado.</p></div>
-        <div class="trust-item reveal"><span class="ic" aria-hidden="true">🛠️</span><h4>Mano de obra</h4><p>Oficios calificados y con experiencia, en tu zona.</p></div>
+        <div class="trust-item reveal"><h4>Rapidez</h4><p>Respuesta ágil y aviso de cualquier imprevisto a tiempo.</p></div>
+        <div class="trust-item reveal"><h4>Precios justos</h4><p>Presupuesto claro y sin cargos ocultos antes de empezar.</p></div>
+        <div class="trust-item reveal"><h4>Puntualidad</h4><p>Llegamos al horario y terminamos en el plazo pactado.</p></div>
+        <div class="trust-item reveal"><h4>Mano de obra</h4><p>Oficios calificados y con experiencia, en tu zona.</p></div>
       </div>
     </div>
   </section>
@@ -450,7 +452,7 @@
       short:'Venta, reparación y colocación de ventanas y marcos.',
       detail:'Colocación y reparación de ventanas, marcos y aberturas. Asesoramos sobre el mejor material para tu casa y dejamos todo sellado y funcionando.' },
     { id:'rejas', icon:'🏗️', title:'Rejas y portones', color:'accent2', slug:'rejas-portones',
-      img:{id:'rejas', alt:'Mantenimiento de rejas y portones de hierro y madera', title:'Rejas y portones'},
+      img:{id:'rejas-portones', alt:'Mantenimiento de rejas y portones de hierro y madera', title:'Rejas y portones'},
       tag:'Herrería', price:'A presupuestar',
       short:'Mantenimiento de hierro y madera. Portones que abren y cierran como nuevos.',
       detail:'Mantenimiento, reparación y fabricación de rejas, portones de hierro y puertas de madera. Soldadura, pintura anticorrosiva, ajuste y lubricación de herrajes.' },
